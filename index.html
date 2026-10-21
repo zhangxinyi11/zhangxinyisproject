@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="HLLXqmNAllY5FVWlBEwGTB" data-dm-ref="1" class="js" data-preloaded=""><head data-page-node-id="2bxHIVSkNkmeuXwNIpkcCW">
+<meta charset="UTF-8" data-page-node-id="OEDPpGU4sylziZAMCV3441">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="ZaVu05DX83EdVUpjcfEWQ2"><title data-page-node-id="0n1R9lHUA9kNc7BMK7iTkj" data-pnid-children="C1uddLqRZZkBbiGeY2UuRB" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important">张心怡 Sugar · 项目经理 / PMO — 个人简历介绍页</title>
+<title>张心怡 Sugar · 项目经理 / PMO — 个人简历介绍页</title>
+<style>
+  :root{
+    --bg:#F7F7FB;
+    --purple:#1B1B22;
+    --purple-deep:#000000;
+    --purple-soft:#EFEFF3;
+    --lilac:#C9C9D1;
+    --ease-expo:cubic-bezier(.14,1,.34,1);
+    --silver:#9C9CA6;
+    --navy:#284e80;
+    --ink:#17172B;
+    --ink-soft:#33334A;
+    --muted:#555568;
+    --line:#E7E7F0;
+    --card:#FFFFFF;
+    --lav:#F2F2F4;
+    --sans:"Inter","HarmonyOS Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--purple);color:#fff}
+  a{text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 36px}
+  @media(max-width:860px){.wrap{padding:0 20px}}
+  section{padding:96px 0 24px}
+
+  /* ================= 通告条 ================= */
+  .banner{
+    background:var(--lav);
+    display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;
+    padding:10px 20px;font-size:13.5px;color:var(--ink-soft);letter-spacing:.3px;
+  }
+  .banner .b-pill{
+    background:var(--ink);color:#fff;border-radius:999px;padding:5px 16px;
+    font-size:12.5px;letter-spacing:.5px;display:inline-flex;align-items:center;gap:7px;transition:.25s;
+  }
+  .banner .b-pill:hover{transform:translateY(-1px);background:#000}
+  .banner .dot-live{width:7px;height:7px;border-radius:50%;background:var(--silver);display:inline-block}
+
+  /* ================= 导航 ================= */
+  .topbar{
+    position:sticky;top:0;z-index:100;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:15px 36px;background:rgba(247,247,251,.88);backdrop-filter:blur(12px);
+    border-bottom:1px solid transparent;transition:border-color .3s;
+  }
+  .topbar.scrolled{border-bottom-color:var(--line)}
+  .logo{display:flex;align-items:center;gap:10px;color:var(--ink)}
+  .logo .star{color:var(--silver);font-size:15px;line-height:1}
+  .logo .name{font-size:19px;font-weight:800;letter-spacing:.5px}
+  .logo .sub{
+    font-size:10.5px;letter-spacing:2px;color:var(--muted);font-weight:600;
+    border-left:1px solid var(--line);padding-left:10px;margin-left:2px;white-space:nowrap;
+  }
+  /* 导航整体右置 */
+  .nav{display:flex;gap:26px;align-items:center;margin-left:auto}
+  /* 文字链接：默认半透明，悬停/当前区全亮 */
+  .nav .nl{
+    position:relative;color:var(--ink);font-size:14px;font-weight:500;
+    opacity:.7;transition:opacity .35s ease,color .35s ease;
+  }
+  .nav .nl:hover{opacity:1}
+  .nav .nl.active{opacity:1;color:var(--purple)}
+  /* 悬停滚动字：第一层上滚出、第二层自下滚入（参考 overworldaudio.com） */
+  .nav .link-inner{position:relative;display:inline-block;overflow:hidden;line-height:1.45;vertical-align:bottom}
+  .nav .t1,.nav .t2{display:block;transition:transform .5s var(--ease-expo),opacity .5s var(--ease-expo)}
+  .nav .t2{position:absolute;left:0;top:0;width:100%;transform:translateY(105%);opacity:0}
+  .nav .nl:hover .t1{transform:translateY(-105%);opacity:0}
+  .nav .nl:hover .t2{transform:translateY(0);opacity:1}
+  /* 当前区小圆点 */
+  .nav .nl::after{
+    content:"";position:absolute;left:50%;bottom:-9px;width:4px;height:4px;border-radius:50%;
+    background:var(--purple);transform:translateX(-50%) scale(0);
+    transition:transform .35s var(--ease-expo);
+  }
+  .nav .nl.active::after{transform:translateX(-50%) scale(1)}
+  /* 联系我 CTA：沿用原「下载简历」按钮 UI */
+  .nav-cta{
+    display:inline-flex;align-items:center;gap:7px;background:var(--purple);color:#fff;
+    border-radius:10px;padding:10px 20px;font-size:13.5px;font-weight:600;letter-spacing:.3px;
+    margin-left:6px;white-space:nowrap;
+    transition:transform .25s,box-shadow .25s,background .25s;
+  }
+  .nav-cta:hover{background:var(--purple-deep);transform:translateY(-2px);box-shadow:0 10px 24px rgba(27,27,34,.28)}
+  .nav-cta .arr{transition:transform .25s var(--ease-expo)}
+  .nav-cta:hover .arr{transform:translateX(3px)}
+  .btn-p{
+    display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;
+    border-radius:10px;padding:11px 22px;font-size:14px;font-weight:600;letter-spacing:.3px;
+    transition:transform .25s,box-shadow .25s,background .25s;
+  }
+  .btn-p:hover{background:var(--purple-deep);transform:translateY(-2px);box-shadow:0 10px 24px rgba(27,27,34,.28)}
+  .btn-s{
+    display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);
+    border:1px solid var(--line);border-radius:10px;padding:11px 22px;font-size:14px;font-weight:600;
+    transition:.25s;
+  }
+  .btn-s:hover{border-color:var(--purple);color:var(--purple);transform:translateY(-2px)}
+  .btn-s.on-dark{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+  .btn-s.on-dark:hover{border-color:#fff;color:#fff}
+  @media(max-width:860px){.nav .nl{display:none}.nav{gap:0}.topbar{padding:13px 20px}.logo .sub{display:none}}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 1px 3px rgba(23,23,43,.05)}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ================= Hero（Serein 布局 × 黑主题） ================= */
+  .hero{padding:78px 0 72px;background:linear-gradient(180deg,#FFFFFF 0%,var(--bg) 100%);position:relative;overflow:hidden}
+  .hero>.wrap{position:relative;z-index:1}
+  .hero-lines{position:absolute;left:0;top:0;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.2s ease}
+  .hero-lines.on{opacity:1}
+  .hero-lines svg{display:block}
+  .hero-lines .arc{transform-box:view-box;will-change:transform}
+  .hero-lines.off .arc{animation-play-state:paused !important}
+  @keyframes arcSpinA{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+  @keyframes arcSpinB{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+  /* 弧动画由 JS 写成 inline style，暂停/关闭必须用 !important 才能覆盖 */
+  @media(prefers-reduced-motion:reduce){.hero-lines .arc{animation:none !important}}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:48px}}
+  .hero-eyebrow{font-size:13px;letter-spacing:5px;color:var(--muted);text-transform:uppercase;margin-bottom:15px;font-weight:700}
+  .hero h1{font-size:clamp(52px,7vw,88px);font-weight:800;letter-spacing:3px;line-height:1.05;margin-bottom:13px}
+  .hero-line{font-size:16.5px;color:var(--muted);max-width:540px;margin-bottom:9px;line-height:1.85}
+  .hero-line b{color:var(--ink-soft);font-weight:600}
+  .hero-sub{font-size:14.5px;color:#7A7A88;max-width:500px;line-height:1.9;letter-spacing:.6px;margin-bottom:36px}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+  .pills span{
+    border:1px solid var(--line);background:#fff;border-radius:999px;
+    padding:7px 18px;font-size:13.5px;color:var(--ink-soft);letter-spacing:1px;font-weight:500;
+  }
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+  .app-stage{position:relative;display:flex;flex-direction:column;align-items:center;gap:22px}
+  .app-glow{
+    position:absolute;inset:-12% -8% 4% -8%;border-radius:50%;pointer-events:none;
+    background:radial-gradient(closest-side,rgba(27,27,34,.17),rgba(27,27,34,0) 72%);
+    filter:blur(6px);animation:glowpulse 5s ease-in-out infinite;
+  }
+  .photo-frame{
+    position:relative;width:min(292px,70vw);aspect-ratio:1/1;border-radius:50%;
+    overflow:hidden;background:#fff;border:1px solid var(--line);padding:9px;
+    box-shadow:0 24px 60px rgba(23,23,43,.18);
+    animation:appfloat 6s ease-in-out infinite;
+  }
+  .photo-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:50%;display:block}
+  .avatar-meta{text-align:center;font-size:13px;color:var(--muted);letter-spacing:1px;line-height:2.15}
+  .avatar-meta b{color:var(--ink);font-weight:600}
+  @keyframes appfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes glowpulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:.9;transform:scale(1.06)}}
+  @media(max-width:860px){.app-glow{inset:-8% -4% 2% -4%}}
+  @media(prefers-reduced-motion:reduce){.photo-frame,.app-glow{animation:none}}
+  .scroll-hint{margin-top:72px;display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:3px;color:var(--muted)}
+  .scroll-hint::after{content:"";width:1px;height:32px;background:var(--muted);animation:drip 1.8s infinite}
+  @keyframes drip{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* ================= 数据条 ================= */
+  .stats{
+    background:#fff;border:1px solid var(--line);border-radius:18px;
+    display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;box-shadow:0 1px 3px rgba(23,23,43,.05);
+  }
+  @media(max-width:860px){.stats{grid-template-columns:1fr 1fr}}
+  .stat-cell{padding:32px 18px;text-align:center}
+  .stat-cell + .stat-cell{border-left:1px solid var(--line)}
+  @media(max-width:860px){.stat-cell:nth-child(3){border-left:none}.stat-cell:nth-child(n+3){border-top:1px solid var(--line)}}
+  .stat-cell .v{font-size:clamp(30px,3.6vw,42px);font-weight:800;line-height:1.05;letter-spacing:.5px}
+  .stat-cell .v small{font-size:15px;font-weight:600;color:var(--muted);margin-left:2px}
+  .stat-cell .k{font-size:12.5px;color:var(--muted);letter-spacing:1.5px;margin-top:6px}
+
+  /* ================= 区块标题 ================= */
+  .sec-head{text-align:center;margin-bottom:44px}
+  .eyebrow{
+    display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:3.5px;color:var(--purple);
+    text-transform:uppercase;margin-bottom:14px;
+  }
+  .sec-title{font-size:clamp(27px,3.8vw,38px);font-weight:800;letter-spacing:1px;line-height:1.25}
+  .sec-desc{color:var(--muted);font-size:15px;max-width:640px;margin:12px auto 34px;text-align:center;line-height:1.7}
+  .sub-head{
+    display:flex;align-items:baseline;gap:14px;margin:64px 0 30px;
+  }
+  .sub-head .no{font-size:13px;font-weight:800;color:var(--purple);letter-spacing:2px}
+  .sub-head h3{font-size:22px;font-weight:800;letter-spacing:1px}
+  .sub-head .en{font-size:11px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-left:auto}
+
+  /* ================= 01 经历 ================= */
+  .job-card{padding:44px 48px;margin-bottom:28px}
+  @media(max-width:860px){.job-card{padding:30px 24px}}
+  .job-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+  .job-org{font-size:24px;font-weight:800;letter-spacing:1px}
+  .job-badge{
+    border:1px solid var(--line);border-radius:999px;background:#fff;
+    font-size:12px;color:var(--muted);padding:4px 14px;letter-spacing:1px;white-space:nowrap;
+  }
+  .job-role{font-size:15px;color:var(--ink-soft);margin-bottom:6px}
+  .job-role b{font-weight:700}
+  .job-time{font-size:13px;color:var(--muted);letter-spacing:1px;margin-bottom:26px}
+  .job-block{margin-bottom:26px}
+  .job-block:last-child{margin-bottom:0}
+  .job-block h4{font-size:14px;letter-spacing:2px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+  .job-block h4::before{content:"";width:18px;height:1px;background:var(--ink)}
+  .job-block ul{list-style:none}
+  .job-block li{position:relative;padding-left:20px;margin-bottom:9px;font-size:15px;color:var(--ink-soft)}
+  .job-block li::before{content:"";position:absolute;left:2px;top:.78em;width:5px;height:5px;border-radius:50%;background:var(--purple)}
+  .job-block li b{color:var(--ink);font-weight:700}
+  /* 项目部分：经历模块选项卡（data-m 与经历卡标签 data-tag 对应） */
+  .proj-mod{padding:42px 44px}
+  @media(max-width:860px){.proj-mod{padding:28px 24px}}
+  .mod-panel{display:none}
+  .mod-panel.on{display:block;animation:modIn .35s ease}
+  @keyframes modIn{from{opacity:0;transform:translateY(6px)}}
+  @media(prefers-reduced-motion:reduce){.mod-panel.on{animation:none}}
+  /* 模块摘要：灰框 */
+  .mod-summary{background:var(--lav);border-radius:14px;padding:17px 24px;font-size:15px;color:var(--ink-soft);margin-bottom:24px;line-height:1.8;letter-spacing:.2px}
+  /* 小节区块化：白底描边，块与块分开 */
+  .mod-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin-bottom:14px;transition:transform .35s,box-shadow .35s,border-color .35s}
+  .mod-item:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(23,23,43,.09);border-color:var(--lilac)}
+  .mod-item:hover h5{color:var(--purple)}
+  .mod-item:last-child{margin-bottom:0}
+  @media(max-width:860px){.mod-item{padding:16px 18px}}
+  @media(prefers-reduced-motion:reduce){.mod-item{transition:none}.mod-item:hover{transform:none}}
+  .mod-item h5{font-size:15.5px;letter-spacing:.2px;font-weight:700;color:var(--ink);margin-bottom:14px;transition:color .35s}
+  .mod-item h5 .dim{
+    display:inline-block;vertical-align:middle;margin-left:10px;
+    font-size:11.5px;font-weight:600;letter-spacing:.3px;color:var(--muted);
+    background:var(--lav);border:1px solid var(--line);border-radius:999px;padding:2px 11px;
+  }
+  .mod-item ul{list-style:none}
+  .mod-item li{position:relative;padding-left:22px;margin-bottom:10px;font-size:14.5px;color:var(--ink-soft);line-height:1.8;letter-spacing:.2px}
+  .mod-item li:last-child{margin-bottom:0}
+  .mod-item li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--purple)}
+  .mod-item li b{color:var(--ink);font-weight:700}
+  /* 小节「详细」按钮：标题行右侧，点击展开预留区 */
+  .mod-more{
+    margin-left:auto;border:1px solid var(--line);background:transparent;color:var(--muted);
+    border-radius:999px;padding:3px 13px;font-size:12px;font-weight:600;letter-spacing:.5px;
+    cursor:pointer;transition:.25s;font-family:var(--sans);display:inline-flex;align-items:center;gap:5px;
+  }
+  .mod-more:hover{color:var(--purple);border-color:var(--purple)}
+  .mod-more i{font-style:normal;display:inline-block;transition:transform .3s var(--ease-expo)}
+  .mod-item.open .mod-more{color:#fff;background:var(--purple);border-color:var(--purple)}
+  .mod-item.open .mod-more i{transform:rotate(180deg)}
+  /* 详细预留区：grid 行高动画，内容后续填充 */
+  .mod-detail{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s var(--ease-expo)}
+  .mod-detail>div{overflow:hidden}
+  .mod-item.open .mod-detail{grid-template-rows:1fr}
+  .mod-detail-inner{padding-top:14px}
+  @media(prefers-reduced-motion:reduce){.mod-detail{transition:none}}
+  .job-block li .see{color:var(--muted);font-size:13px}
+  .job-block li a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+  .job-block li a:hover{border-bottom-color:var(--ink)}
+  .edu-card{padding:34px 48px;display:flex;align-items:center;gap:34px;flex-wrap:wrap}
+  @media(max-width:860px){.edu-card{padding:26px 24px}}
+  .edu-school{font-size:20px;font-weight:800}
+  .edu-meta{font-size:14px;color:var(--muted)}
+  /* 关键词标签行：常驻显示在卡片头部下方（折叠体外），内边距与 head 对齐 */
+  .edu-points,.job-points{display:flex;gap:10px;flex-wrap:wrap;padding:0 44px 20px}
+  .edu-points span,.job-points span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:12.5px;color:var(--ink-soft)}
+  /* 折叠体为空（内容待补）时不占高度，点了也不会露出空白 */
+  .exp-inner:empty{padding:0}
+  /* 经历卡片：折叠展开 */
+  .exp-grid{display:flex;flex-direction:column;gap:20px}
+  .exp-card{padding:0;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+  .exp-card.open{border-color:var(--ink);box-shadow:0 12px 34px rgba(23,23,43,.09)}
+  .exp-head{display:flex;align-items:center;gap:18px;padding:24px 44px 20px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;border-radius:18px}
+  .exp-head:hover{background:rgba(23,23,43,.025)}
+  .exp-head:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+  .exp-head-main{flex:1;min-width:0;display:block}
+  .exp-head .job-org{display:block;font-size:22px;font-weight:800;letter-spacing:1px;line-height:1.32}
+  .exp-head .job-role{display:block;font-size:15px;color:var(--ink-soft);margin:3px 0 0;line-height:1.5}
+  .exp-arrow{flex:none;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--muted);transition:transform .38s cubic-bezier(.22,.61,.36,1),border-color .3s,color .3s,background .3s}
+  .exp-head:hover .exp-arrow{border-color:var(--ink);color:var(--ink)}
+  .exp-card.open .exp-arrow{transform:rotate(180deg);background:var(--ink);border-color:var(--ink);color:#fff}
+  .exp-body{max-height:0;overflow:hidden;transition:max-height .48s cubic-bezier(.22,.61,.36,1)}
+  .exp-inner{padding:4px 44px 38px}
+  .exp-inner .job-time{margin:2px 0 24px}
+  @media(max-width:860px){
+    .exp-head{padding:18px 22px 16px;gap:12px}
+    .exp-inner{padding:2px 22px 28px}
+    .exp-head .job-org{font-size:19px}
+    .edu-points,.job-points{padding:0 22px 16px}
+  }
+  @media(max-width:560px){.exp-head{flex-wrap:wrap;gap:10px 12px}.exp-head-main{flex:1 1 100%}.exp-head .job-badge{margin-left:auto}}
+  @media(prefers-reduced-motion:reduce){.exp-body,.exp-arrow{transition:none}}
+
+  /* ================= 02 项目 ================= */
+
+  /* 项目模块选项卡 */
+  .tabs{
+    display:flex;flex-wrap:wrap;gap:6px;justify-content:center;
+    background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px;
+    width:max-content;max-width:100%;margin:0 auto 40px;box-shadow:0 1px 3px rgba(23,23,43,.05);
+  }
+  .tab{
+    border:none;background:transparent;color:var(--ink-soft);border-radius:999px;
+    padding:9px 20px;font-size:14px;font-weight:600;letter-spacing:.2px;cursor:pointer;
+    transition:.25s;font-family:var(--sans);
+  }
+  .tab:hover{color:var(--purple)}
+  .tab.on{background:var(--purple);color:#fff}
+
+  /* ================= 03 技能 ================= */
+  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  @media(max-width:860px){.skill-grid{grid-template-columns:1fr}}
+  .skill-card{padding:36px 32px}
+  .skill-card h3{font-size:18px;font-weight:800;letter-spacing:1px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+  .skill-card .ic{
+    width:36px;height:36px;border-radius:11px;background:var(--purple-soft);
+    display:inline-flex;align-items:center;justify-content:center;font-size:17px;
+  }
+  .skill-card ul{list-style:none}
+  .skill-card li{position:relative;padding-left:20px;font-size:14px;color:var(--ink-soft);margin-bottom:9px}
+  .skill-card li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--purple)}
+
+  /* ================= 04 生活 ================= */
+  .life-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center}
+  @media(max-width:860px){.life-grid{grid-template-columns:1fr;gap:36px}}
+  .life-ip{display:flex;flex-direction:column;align-items:center}
+  .ip-wave{width:min(150px,38vw);display:block;animation:ipFloat 3.6s ease-in-out infinite}
+  @keyframes ipFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+  @media(prefers-reduced-motion:reduce){.ip-wave{animation:none}}
+  .life-tabs{display:flex;flex-direction:column;gap:10px;margin-top:14px;width:min(220px,100%)}
+  .life-tabs button{
+    border:1px solid var(--line);background:#fff;border-radius:999px;
+    padding:10px 20px;font-size:14px;font-weight:600;color:var(--ink-soft);
+    cursor:pointer;transition:.25s;font-family:var(--sans);width:100%;
+  }
+  .life-tabs button:hover{border-color:var(--silver)}
+  .life-tabs button.on{background:var(--purple);color:#fff;border-color:var(--purple)}
+  .life-note{margin-top:16px;font-size:13px;color:var(--muted);line-height:1.9}
+  .photo-stack{position:relative;height:430px}
+  @media(max-width:860px){.photo-stack{height:360px}}
+  /* 照片牌：默认收成堆叠态（只露角），CSS 变量 --px/--py/--pr 由 JS 按布局计算 */
+  .photo{
+    position:absolute;border-radius:16px;overflow:hidden;
+    border:1px solid var(--line);background:#fff;
+    box-shadow:0 10px 30px rgba(23,23,43,.08);
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;z-index:var(--z,1);
+    transform:translate(var(--px,0px),var(--py,0px)) rotate(var(--pr,0deg)) scale(.92);
+    transition:opacity .45s ease var(--d,0ms),
+               transform .6s cubic-bezier(.22,1,.36,1) var(--d,0ms),
+               box-shadow .35s ease;
+    cursor:pointer;will-change:transform;
+  }
+  .photo.show{opacity:1}
+  /* 展开态：归位到扇形布局，带轻微旋转 */
+  .photo-stack.open .photo.show{transform:rotate(var(--or,0deg)) scale(1)}
+  /* 置顶放大（悬停/点击）：堆叠态——抽出牌堆、摆正、放大上浮 */
+  .photo.show.hover{
+    transform:translate(var(--px,0px),var(--py,0px)) rotate(0deg) scale(1.18) translateY(-10px);
+    z-index:90;box-shadow:0 26px 60px rgba(23,23,43,.3);
+  }
+  /* 置顶放大（悬停/点击）：展开态——保持弧度、放大上浮 */
+  .photo-stack.open .photo.show.hover{
+    transform:rotate(var(--or,0deg)) scale(1.15) translateY(-14px);
+    z-index:90;box-shadow:0 28px 64px rgba(23,23,43,.28);
+  }
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;-webkit-user-drag:none}
+  .photo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#17172B}
+  .photo .emo{font-size:34px}
+  .photo .ph{position:absolute;left:0;right:0;bottom:14px;text-align:center;font-size:11px;color:var(--muted);letter-spacing:1px}
+  @media(prefers-reduced-motion:reduce){.photo{transition:opacity .3s ease}}
+
+  /* ================= 岗位意向 ================= */
+  .toggle{
+    display:flex;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;
+    padding:6px;width:max-content;max-width:100%;margin:0 auto 42px;box-shadow:0 1px 3px rgba(23,23,43,.05);
+  }
+  .toggle button{
+    border:none;background:transparent;color:var(--ink-soft);border-radius:999px;
+    padding:9px 22px;font-size:13.5px;font-weight:600;cursor:pointer;transition:.25s;font-family:var(--sans);
+  }
+  .toggle button.on{background:var(--purple);color:#fff}
+  .tracks{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+  @media(max-width:860px){.tracks{grid-template-columns:1fr}}
+  .track{padding:40px 36px;display:flex;flex-direction:column;position:relative;cursor:pointer;transition:border-color .3s,box-shadow .3s;border:1.5px solid #DDDDE6;box-shadow:0 4px 14px rgba(23,23,43,.07)}
+  .track.featured{border:1.5px solid var(--purple);box-shadow:0 18px 44px rgba(27,27,34,.16)}
+  .track:not(.featured):hover{border-color:var(--silver);box-shadow:0 10px 26px rgba(23,23,43,.10)}
+  .track .badge{
+    position:absolute;top:-13px;left:36px;background:var(--purple);color:#fff;
+    font-size:11.5px;font-weight:700;letter-spacing:1.5px;border-radius:999px;padding:4px 14px;
+  }
+  .track .kind{font-size:11.5px;font-weight:700;letter-spacing:2.5px;color:var(--purple);margin-bottom:8px}
+  .track h3{font-size:24px;font-weight:800;letter-spacing:1px;margin-bottom:8px}
+  .track .slogan{font-size:14.5px;color:var(--ink-soft);margin-bottom:22px;font-weight:500}
+  .track ul{list-style:none;margin-bottom:0}
+  .track li{position:relative;padding-left:25px;font-size:14px;color:var(--ink-soft);margin-bottom:10px}
+  .track li::before{content:"";position:absolute;left:0;top:.42em;width:14px;height:14px;border-radius:50%;background:var(--purple-soft)}
+  .track li::after{
+    content:"";position:absolute;left:4px;top:.72em;width:6px;height:3.5px;
+    border-left:1.8px solid var(--purple);border-bottom:1.8px solid var(--purple);transform:rotate(-45deg);
+  }
+
+  /* ================= 05 联系我 ================= */
+  .cta-band{
+    background:var(--purple);border-radius:24px;color:#fff;
+    padding:60px 56px;display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:center;
+    box-shadow:0 20px 50px rgba(27,27,34,.25);
+  }
+  @media(max-width:860px){.cta-band{grid-template-columns:1fr;padding:44px 28px;border-radius:20px}}
+  .cta-band h2{font-size:clamp(26px,3.6vw,36px);font-weight:800;letter-spacing:1px;line-height:1.3;margin-bottom:14px}
+  .cta-band p{color:rgba(255,255,255,.82);font-size:15px;max-width:460px;margin-bottom:26px}
+  .cta-lines{display:flex;flex-direction:column;gap:11px}
+  .cta-lines a,.cta-lines .ct-line{
+    color:#fff;font-size:14.5px;display:flex;align-items:center;gap:9px;letter-spacing:.3px;
+    align-self:flex-start;cursor:pointer;
+  }
+  .cta-lines a:hover,.cta-lines .ct-line:hover{text-decoration:underline}
+  .cta-lines .ct-ico{flex:none;width:15px;height:15px;opacity:.9}
+  .cta-lines .ct-hint{color:rgba(255,255,255,.62);font-size:12px;letter-spacing:.5px;margin-top:3px;
+    transition:color .25s}
+  .cta-lines .ct-hint.done{color:#fff}
+  .btn-back{
+    margin-top:30px;display:inline-flex;align-items:center;gap:9px;
+    background:transparent;color:var(--purple);border:1.5px solid rgba(27,27,34,.28);
+    border-radius:10px;padding:13px 26px;font-size:14.5px;font-weight:700;letter-spacing:.5px;
+    transition:background .25s,color .25s,border-color .25s,transform .25s,box-shadow .25s;
+  }
+  .btn-back:hover{background:var(--purple);color:#fff;border-color:var(--purple);transform:translateY(-2px);box-shadow:0 12px 28px rgba(27,27,34,.18)}
+  .cta-btns{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+  .btn-white{
+    display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--purple);
+    border-radius:10px;padding:13px 26px;font-size:14.5px;font-weight:700;letter-spacing:.5px;
+    transition:transform .25s,box-shadow .25s;
+  }
+  .btn-white:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.22)}
+  .cta-btns small{color:rgba(255,255,255,.65);font-size:12px;letter-spacing:.5px}
+
+  /* ================= 页脚 ================= */
+  footer{padding:64px 36px 28px;margin-top:90px;border-top:1px solid var(--line);background:#fff}
+  .foot-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;max-width:1140px;margin:0 auto 34px}
+  @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+  .foot-col h4{font-size:13px;font-weight:800;letter-spacing:1px;margin-bottom:14px}
+  .foot-col a{display:block;color:var(--muted);font-size:13px;padding:5px 0;transition:.2s}
+  .foot-col a:hover{color:var(--ink)}
+  .foot-base{
+    max-width:1140px;margin:0 auto;padding-top:26px;border-top:1px solid var(--line);
+    display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:12.5px;color:var(--muted);letter-spacing:1px;
+  }
+  .socials{display:flex;gap:10px}
+  .socials a{
+    width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fff;
+    display:flex;align-items:center;justify-content:center;transition:.25s;
+  }
+  .socials a:hover{border-color:var(--purple);transform:translateY(-2px)}
+  .socials svg{width:15px;height:15px;fill:none;stroke:var(--muted);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:.25s}
+  .socials a:hover svg{stroke:var(--purple)}
+  .totop{
+    position:fixed;right:26px;bottom:30px;z-index:90;
+    width:42px;height:42px;border-radius:50%;
+    background:var(--ink);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    text-decoration:none;font-size:17px;
+    opacity:0;pointer-events:none;transition:.3s;
+    box-shadow:0 8px 20px rgba(23,23,43,.22);
+  }
+  .totop.show{opacity:1;pointer-events:auto}
+  .totop:hover{background:#000;transform:translateY(-2px)}
+  @media(max-width:860px){.totop{right:16px;bottom:20px;width:38px;height:38px}}
+
+  /* ================= 加载界面（参考 piergorelli.com compile intro） ================= */
+  @property --n{syntax:"<integer>";inherits:false;initial-value:0}
+  .preloader{
+    z-index:9999;padding:20px clamp(16px,2.2vw,32px);
+    background:#131318;color:#F4F4F0;
+    clip-path:inset(0);
+    animation:prelift .9s cubic-bezier(.4,0,.2,1) 1.5s forwards;
+    grid-template-rows:auto 1fr auto;place-items:center;
+    display:none;position:fixed;inset:0;
+  }
+  html.js:not([data-preloaded]) .preloader{display:grid}
+  html.js:not([data-preloaded]) body{overflow:hidden}
+  .preloader__meta{
+    width:100%;display:flex;justify-content:space-between;gap:16px;
+    color:rgba(244,244,240,.6);
+    font-family:ui-monospace,"SF Mono","Cascadia Code",Consolas,"Courier New",monospace;
+    font-size:12px;letter-spacing:2.5px;text-transform:uppercase;
+  }
+  .preloader__mark{height:clamp(5rem,15vw,11rem);width:auto;display:block;overflow:visible}
+  .preloader__mark .mk{
+    fill:none;stroke:currentColor;stroke-width:10;
+    stroke-linecap:square;stroke-linejoin:miter;
+    stroke-dasharray:1;stroke-dashoffset:0;
+    animation:plot 1.05s cubic-bezier(.4,0,.2,1) both;
+  }
+  .preloader__mark .mk-h2{animation-delay:.08s}
+  .preloader__mark .mk-hb{animation-delay:.16s}
+  .preloader__mark .mk-i1{animation-delay:.26s}
+  .preloader__mark .mk-i2{animation-delay:.34s}
+  .preloader__mark .mk-i3{animation-delay:.42s}
+  .preloader__mark .mk-dot{
+    fill:var(--silver);transform-box:fill-box;transform-origin:center;
+    animation:pop .4s cubic-bezier(0,0,.2,1) 1.05s both;
+  }
+  .preloader__count{
+    font-variant-numeric:tabular-nums;
+    animation:count 1.1s cubic-bezier(.4,0,.2,1) forwards;
+    counter-reset:n var(--n);
+  }
+  .preloader__count:after{content:counter(n) "%"}
+  @keyframes plot{0%{stroke-dashoffset:1}}
+  @keyframes pop{0%{transform:scale(0)}}
+  @keyframes count{to{--n:100}}
+  @keyframes prelift{to{clip-path:inset(0 0 100%);visibility:hidden}}
+  @media(prefers-reduced-motion:reduce){.preloader{display:none!important}}
+</style>
+<script><!--pnid:dhJRDkOrCrZU2bBPNlQsDY-->
+/* 加载界面：仅在 JS 可用时出现；load 后（至少展示 2.5s）置 data-preloaded 收幕 */
+(function(){var d=document.documentElement;d.classList.add('js');
+var t0=Date.now(),fired=false;
+function finish(){if(fired)return;fired=true;d.setAttribute('data-preloaded','');}
+function afterLoad(){var w=2500-(Date.now()-t0);if(w>0){setTimeout(finish,w);}else{finish();}}
+if(document.readyState==='complete'){afterLoad();}
+else{window.addEventListener('load',afterLoad);}
+setTimeout(finish,6000);})();
+</script>
+<style id="__dm_no_drag_style__">* { -webkit-user-drag: none !important; }</style><style id="__dm_bindable_badge_style__">[data-sp-bindable="database"]{outline:1px dashed #0088ff;outline-offset:2px;border-radius:4px;}[data-sp-bindable="database"] *{pointer-events:none !important;transition:none !important;animation:none !important;}[data-sp-bindable="database"]{transition:none !important;animation:none !important;}</style></head>
+<body data-page-node-id="t87D68n8ciBqxsocjn6AHV" style="">
+<!-- 加载界面 · 参考 piergorelli.com compile intro，中心字母标为 HI -->
+<div class="preloader" data-preloader="" aria-hidden="true" data-page-node-id="mcTFq02lwAyF2sljr5LrPv">
+  <div class="preloader__meta" data-page-node-id="YT3GS2ByDJw0zSWLCBIJx4">
+    <span data-page-node-id="fjKpnWlq3yxxO8qYUQoYdS">Zhang Xinyi · Portfolio</span>
+    <span data-page-node-id="CLhDTz3XpCTVr9JN1VGUoV">2026</span>
+  </div>
+  <svg class="preloader__mark" viewBox="0 0 232 128" fill="none" aria-hidden="true" data-page-node-id="eQCPqRwfUa5gnSzCvym4xH">
+    <path class="mk mk-h1" pathLength="1" d="M22 12 V116" data-page-node-id="jDDbLgLDtoJPTQ6wdUfJO9"></path>
+    <path class="mk mk-h2" pathLength="1" d="M102 12 V116" data-page-node-id="SYbfD3eUI8YT5j2hOJf5Sg"></path>
+    <path class="mk mk-hb" pathLength="1" d="M22 64 H102" data-page-node-id="PjMkrdnTYIKpdfHB57rj4T"></path>
+    <path class="mk mk-i1" pathLength="1" d="M168 12 V116" data-page-node-id="CV5og1EUoRxco6zGJ1Xe42"></path>
+    <path class="mk mk-i2" pathLength="1" d="M142 12 H194" data-page-node-id="BSme3UIafeB2sDXJG38fpj"></path>
+    <path class="mk mk-i3" pathLength="1" d="M142 116 H194" data-page-node-id="EC5kdTXgn4AE1Y93CQ8hQm"></path>
+    <rect class="mk-dot" x="206" y="102" width="14" height="14" data-page-node-id="29Gjf2GYmNZ9L5vvep4uGF"></rect>
+  </svg>
+  <div class="preloader__meta" data-page-node-id="q94wCGbA4SiSCxQh2ykQJc">
+    <span data-page-node-id="tR2erMzoTj1y7z3Az1ze7k">Shenzhen · 深圳</span>
+    <span class="preloader__count" data-page-node-id="beSEj3ITBBsBjcPdpCAuDn"></span>
+  </div>
+</div>
+
+
+<!-- 通告条 -->
+<div class="banner" data-page-node-id="qPsrIGkoN89eUstVNitTbH">
+  <span data-page-node-id="qtvLnI4cJVGZ4XyDkiyn57"><span class="dot-live" data-page-node-id="OMxiMTNOxNQKfqvoHKcXKi"></span><span data-edit="banner_text" data-page-node-id="dIVXqMCc318svEhos0rDt0"> 正在寻找机会 · 深圳 · 可即时到岗</span></span>
+  <a class="b-pill" href="张心怡_简历_项目经理.docx" download="" data-page-node-id="IJxreVq74SP1XsCubCG2Wc">↓ 下载简历</a>
+</div>
+
+<!-- 导航 -->
+<header class="topbar scrolled" id="topbar" data-page-node-id="s5m3g7lVuBYTPjZdDVVdCy">
+  <a class="logo" href="#top" data-page-node-id="x4qFz2vBtSqpqkuztyIzzs">
+    <span class="star" data-page-node-id="YBWwdtCVoE1jjfJOUlDtUB">✦</span>
+    <span class="name" data-edit="logo_name" data-page-node-id="D9ybssLdkvNpgUwB1jNrr0">Sugar</span>
+    <span class="sub" data-edit="logo_sub" data-page-node-id="A2MkicHdlCiZHf9VPsNEHe">ZHANG XINYI · PM/PMO</span>
+  </a>
+  <nav class="nav" data-page-node-id="gXGdLmPKkhgLAEKiwWIjCL">
+    <a class="nl" href="#experience" data-page-node-id="wzy5JCBfxhEmGhR94jHB1x"><span class="link-inner" data-page-node-id="k42y70CCpHAxqYVHirgImZ"><span class="t1" data-edit="nav1" data-page-node-id="Qd4Fjh71htpUO9G2VBXmr9">经历</span><span class="t2" aria-hidden="true" data-page-node-id="KCKEDLeqoILvtUXPZ8OnUC">经历</span></span></a>
+    <a class="nl" href="#projects" data-page-node-id="jEDZLvSZa3HXaPqIYsclyH"><span class="link-inner" data-page-node-id="FEy33QN9urAi3gBzkSAL2Y"><span class="t1" data-edit="nav2" data-page-node-id="2GTzjxCaH0SgQ827vR7vOC">项目</span><span class="t2" aria-hidden="true" data-page-node-id="HYrN4ZkWgmPNHEpzvSFXy2">项目</span></span></a>
+    <a class="nl" href="#skills" data-page-node-id="ScHyFnVM4O6Wz4C5jxfVv8"><span class="link-inner" data-page-node-id="Vc6guf8JLE5ZXJT41w9DlG"><span class="t1" data-edit="nav3" data-page-node-id="spKEkWDsBGXZdADDWTTJIc">技能</span><span class="t2" aria-hidden="true" data-page-node-id="GvG3xAu9m6N67V4FjZn4BA">技能</span></span></a>
+    <a class="nl active" href="#life" data-page-node-id="8csvFXJTCaqXFuEl554jqY"><span class="link-inner" data-page-node-id="hyCQxViUuO8LrFUYuvLJds"><span class="t1" data-edit="nav4" data-page-node-id="r5TDwwwAFCEUPjXFfD69Ib">生活</span><span class="t2" aria-hidden="true" data-page-node-id="nxcZfmZ2ez9HTdRoQTMiqY">生活</span></span></a>
+    <a class="nav-cta" href="#contact" data-edit="nav5" data-page-node-id="OdWBFPNHnENYlXREkSqe46">联系我<span class="arr" aria-hidden="true" data-page-node-id="zjni0oHlij3p6eFZI0IcEt">→</span></a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top" data-page-node-id="iiCZ0ipZTKlgAYAytvvl3W">
+  <div class="hero-lines on off" aria-hidden="true" data-page-node-id="BEQw9H4TzJ9Co9gEGWkuZz" style="width: 876px; height: 679px;"><svg viewBox="0 0 876 679" width="876" height="679"><defs><linearGradient id="arcG0" gradientUnits="userSpaceOnUse" x1="-161.1" y1="-1450.8" x2="-1586.1" y2="-65.5"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".18" stop-color="rgb(23,23,43)" stop-opacity="0.117"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.260"></stop><stop offset=".82" stop-color="rgb(23,23,43)" stop-opacity="0.117"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="arcG1" gradientUnits="userSpaceOnUse" x1="1377.7" y1="945.3" x2="1259.3" y2="-399.4"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".18" stop-color="rgb(23,23,43)" stop-opacity="0.099"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.220"></stop><stop offset=".82" stop-color="rgb(23,23,43)" stop-opacity="0.099"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="arcG2" gradientUnits="userSpaceOnUse" x1="-1543.9" y1="1131.5" x2="-234.3" y2="2023.6"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".18" stop-color="rgb(23,23,43)" stop-opacity="0.090"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.200"></stop><stop offset=".82" stop-color="rgb(23,23,43)" stop-opacity="0.090"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="arcG3" gradientUnits="userSpaceOnUse" x1="378.3" y1="1560.4" x2="1898.8" y2="677.7"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".18" stop-color="rgb(23,23,43)" stop-opacity="0.072"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.160"></stop><stop offset=".82" stop-color="rgb(23,23,43)" stop-opacity="0.072"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG0" gradientUnits="userSpaceOnUse" x1="-122.2" y1="268.2" x2="420.1" y2="648.3"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.091"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG1" gradientUnits="userSpaceOnUse" x1="103.2" y1="-8.1" x2="515.0" y2="241.4"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.067"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG2" gradientUnits="userSpaceOnUse" x1="-116.5" y1="160.3" x2="182.3" y2="359.5"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.090"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG3" gradientUnits="userSpaceOnUse" x1="61.6" y1="305.8" x2="482.5" y2="610.9"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.092"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG4" gradientUnits="userSpaceOnUse" x1="488.8" y1="263.1" x2="1091.1" y2="643.4"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.050"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG5" gradientUnits="userSpaceOnUse" x1="665.0" y1="298.0" x2="1005.4" y2="551.9"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.076"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG6" gradientUnits="userSpaceOnUse" x1="660.8" y1="115.7" x2="998.6" y2="339.7"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.089"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient><linearGradient id="rayG7" gradientUnits="userSpaceOnUse" x1="580.7" y1="-9.1" x2="996.3" y2="293.1"><stop offset="0" stop-color="rgb(23,23,43)" stop-opacity="0"></stop><stop offset=".5" stop-color="rgb(23,23,43)" stop-opacity="0.054"></stop><stop offset="1" stop-color="rgb(23,23,43)" stop-opacity="0"></stop></linearGradient></defs><g class="arc" style="transform-origin: -367.9px -373.5px; animation: 22.8s linear 0s infinite normal none running arcSpinA;"><path d="M-161.1 -1450.8 A1269.7 1091.9 0 1 1 -1586.1 -65.5" fill="none" stroke="url(#arcG0)" stroke-width="2.6" stroke-linecap="round"></path></g><g class="arc" style="transform-origin: 1138.8px 285.2px; animation: 30.3s linear 0s infinite normal none running arcSpinB;"><path d="M1377.7 945.3 A787.3 692.8 0 1 1 1259.3 -399.4" fill="none" stroke="url(#arcG1)" stroke-width="2.2" stroke-linecap="round"></path></g><g class="arc" style="transform-origin: -332.9px 1154.3px; animation: 19.9s linear 0s infinite normal none running arcSpinA;"><path d="M-1543.9 1131.5 A1211.4 872.2 0 1 1 -234.3 2023.6" fill="none" stroke="url(#arcG2)" stroke-width="1.9" stroke-linecap="round"></path></g><g class="arc" style="transform-origin: 1095px 1086.4px; animation: 30.8s linear 0s infinite normal none running arcSpinB;"><path d="M378.3 1560.4 A1014.6 669.7 0 1 1 1898.8 677.7" fill="none" stroke="url(#arcG3)" stroke-width="1.6" stroke-linecap="round"></path></g><line x1="-122.2" y1="268.2" x2="420.1" y2="648.3" stroke="url(#rayG0)" stroke-width="1"></line><line x1="103.2" y1="-8.1" x2="515.0" y2="241.4" stroke="url(#rayG1)" stroke-width="1"></line><line x1="-116.5" y1="160.3" x2="182.3" y2="359.5" stroke="url(#rayG2)" stroke-width="1"></line><line x1="61.6" y1="305.8" x2="482.5" y2="610.9" stroke="url(#rayG3)" stroke-width="1"></line><line x1="488.8" y1="263.1" x2="1091.1" y2="643.4" stroke="url(#rayG4)" stroke-width="1"></line><line x1="665.0" y1="298.0" x2="1005.4" y2="551.9" stroke="url(#rayG5)" stroke-width="1"></line><line x1="660.8" y1="115.7" x2="998.6" y2="339.7" stroke="url(#rayG6)" stroke-width="1"></line><line x1="580.7" y1="-9.1" x2="996.3" y2="293.1" stroke="url(#rayG7)" stroke-width="1"></line></svg></div>
+  <div class="wrap" data-page-node-id="R7MIn1n79SrSQju9oCGJ9r">
+    <div class="hero-grid" data-page-node-id="c1nYt0OCZfhDWpH3yYTMOB">
+      <div data-page-node-id="TPdNGlZt5vPOtoyU9P0vVg">
+        <div class="hero-eyebrow" data-edit="hero_eyebrow" data-page-node-id="FabXamjF0Kidjw4pDPqo0p" style="">PROJECT MANAGER · SHENZHEN</div>
+        <h1 data-edit="hero_name" data-page-node-id="KbFswT0McbLV1DdyEE2pGv">张心怡</h1>
+        <p class="hero-line" data-edit="hero_line" data-page-node-id="vNGI2QBvVCccqkU1DRAsH1">5 年消费电子集团研发项目管理经验，擅长<b data-page-node-id="Ft3DCfaG5Emo6ej7YSjEME">研发治理与数据体系建设</b>、多类型重点项目交付与跨主体协同，以按期验收与可量化结果收口。</p>
+        <p class="hero-sub" data-edit="hero_sub" data-page-node-id="fUs8if1DQ8kEoGNJeKhLvJ">喜欢从没人知道该怎么做的地方开始，心无旁骛地把复杂的事做成。</p>
+        <div class="pills" data-page-node-id="FOgT4FSeaHuoxUv0VRPCfH">
+          <span data-page-node-id="lmHCHs36dI5ggVtZDHCwKG" data-edit="pill1">研发治理</span><span data-page-node-id="adEahwGEo4o4RLJMuPYxI5" data-edit="pill2">项目交付</span><span data-page-node-id="MvGfUHEPPX4Dglz6DGA2tx" data-edit="pill3">数据体系</span><span data-page-node-id="RPZftSDZeahJQV8wAYEAzj" data-edit="pill4">决策支撑</span>
+        </div>
+        <div class="hero-btns" data-page-node-id="HLs6mtXmDa92XKslhYKbiI">
+          <a class="btn-p" href="#experience" data-page-node-id="szeBkx5fjzHdhaQ74Ve8Og" data-edit="hero_btn_exp">查看经历 ↓</a>
+          <a class="btn-s" href="张心怡_简历_项目经理.docx" download="" data-page-node-id="s4vNnPHNti4IA0NHhXfZEy" data-edit="hero_btn_dl">下载简历</a>
+        </div>
+      </div>
+      <div class="app-stage" data-page-node-id="IggkvczRcYTJgfHpPBxE3p">
+        <div class="app-glow" aria-hidden="true" data-page-node-id="v4Jqfa85siBpf8XyDdTSa0"></div>
+        <div class="photo-frame" data-page-node-id="photoFrame0001">
+          <img src="profile.jpg" alt="张心怡 · 个人照片" data-page-node-id="HBbWVgsppExNMATGyfYRlJ">
+        </div><div class="avatar-meta" data-page-node-id="fOply18BivUs8xvDh4PLoj" style=""><b data-page-node-id="j12ATLRSwzYhtvMwwt3sD6" data-edit="meta1" style="font-weight: 400;">西北农林科技大学（985）· 电子信息工程</b><br data-page-node-id="fDWZdP2Ep9H0s4FzHF8qVs"><span data-edit="meta3" data-page-node-id="oAYOMl4Lx6VykxjCLTw7ut" style="">5 年科技创新管理 · 可即时到岗​​</span></div>
+        
+      </div>
+    </div>
+    <div class="scroll-hint" data-page-node-id="FEgmAWGCYGU3PR8bZZ00g2">向下滚动 · 五个区块了解我</div>
+  </div>
+</section>
+
+<!-- 数据条 -->
+<section id="about" style="padding-top:0" data-page-node-id="0AI215q6oPvnZ9Wgd74Vi9">
+  <div class="wrap" data-page-node-id="RyZF21cUQICWFqoXCg7qwW">
+    <div class="stats reveal in" data-page-node-id="pB69CYpAHmSqjeTDEqOBPT">
+      <div class="stat-cell" data-page-node-id="BTuA0GLgTpmoxSwhnhxhBS"><div class="v" data-page-node-id="5Q6eDspvj6gw3eJ6nBNbsl"><span data-edit="stat1_num" data-page-node-id="ezIBAbOsxDdoQDrDMqIeYs">5</span><small data-page-node-id="8YEYGumQBJqeHZDgxZsZAc" data-edit="stat1_unit"> 年</small></div><div class="k" data-page-node-id="AbHV23QaPB1BYLXru2CBC7" data-edit="stat1_label">集团科技管理</div></div>
+      <div class="stat-cell" data-page-node-id="qgaj90nfuCym0YMGmZoEth"><div class="v" data-page-node-id="jr0loVnHI6c7kDpQqkug8b"><span data-edit="stat2_num" data-page-node-id="pmwtqdnknqaOxyLniYVUTQ">100</span><small data-page-node-id="98WjLfdACVp3AEjN9poaRH" data-edit="stat2_unit">+ 个</small></div><div class="k" data-page-node-id="SJnjCXAyVXwzk6veGQW8D6" data-edit="stat2_label">研发项目统筹</div></div>
+      <div class="stat-cell" data-page-node-id="BHkJ2a2DFxzm7dg8PiMkCG"><div class="v" data-page-node-id="fWywI3gnMgMc6DsVYmu6Jm"><span data-edit="stat3_num" data-page-node-id="lwMZlO4agvv8aXnX9OSfjc">30</span><small data-page-node-id="uij0MhWcQRGWG6z6xrPqC0" data-edit="stat3_unit">+ 项</small></div><div class="k" data-page-node-id="eWTDQ5ZjTHr8G5NwLVKpul" data-edit="stat3_label">年度专项行动</div></div>
+      <div class="stat-cell" data-page-node-id="mCTgooU8JiO9eBENnsiO9u"><div class="v" data-page-node-id="YdcWdPsNplZXaa3Ec5PAAp"><span data-edit="stat4_num" data-page-node-id="aFt2LzwmvPOIXyQ8SfbI05">3</span><small data-page-node-id="dLaFVtIX0RrDdIbg4XBAv1" data-edit="stat4_unit"> 类</small></div><div class="k" data-page-node-id="CuwWFcLVSowOVSJjyMsCUr" data-edit="stat4_label">性质重点项目操盘</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 经历 -->
+<section id="experience" data-page-node-id="0H465sQZ8KoqjuKu25EMgY">
+  <div class="wrap" data-page-node-id="sCsDkaK2mWRdVCsCmG2BU7">
+    <div class="sec-head reveal in" data-page-node-id="0GjIkHDrf0SLljzS6Wqdms">
+      <div class="eyebrow" data-page-node-id="TdmchaJRfwn45qgEcO5MBT">01 · Experience</div>
+      <h2 class="sec-title" data-page-node-id="Bw5hwdFLFwL8a7GESk36G4" data-edit="sec_title_exp">经历</h2>
+    </div>
+
+        <div class="exp-grid" id="expGrid" data-page-node-id="VF7ZluckAONUXqdb7kXynV">
+
+      <div class="card exp-card" id="expJob" data-page-node-id="4juIJHFzKmzCVnBIEC0aDL" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="exp-head" role="button" tabindex="0" aria-expanded="false" aria-controls="expJobBody" data-page-node-id="7ymrdUtYEGBBdbX8yUoKmL">
+          <span class="exp-head-main" data-page-node-id="PFLboLILF8y4xcKnGzyJLb">
+            <span class="job-org" data-page-node-id="idPxnNhndkPy44xXEuIgsE">康佳集团股份有限公司</span>
+            <span class="job-role" data-page-node-id="H6K34Aoiz8YqLjdNffdpAG"><b data-page-node-id="UPFyM9Z3BlHnAClApK1CFU">科技创新项目主管</b> · 科技产业创新研究中心</span>
+          </span>
+          <span class="job-badge" data-page-node-id="SI8uKGozi62M4QFrQCHDaa">工作经历 · 2021.07 – 2026.04</span>
+          <span class="exp-arrow" aria-hidden="true" data-page-node-id="jcvbm7FgWvryR0fCCfSWQk">▾</span>
+        </div>
+        <div class="job-points" data-page-node-id="JobPoints01">
+          
+          
+          
+          
+        <span data-page-node-id="6tEVcHmbqfH0SR6lowTGEq" data-tag="govern" style="margin:0;padding:5px 14px;box-sizing:border-box;-webkit-user-drag:none !important;background:#F7F7FB;border:1px solid #E7E7F0;border-radius:999px;font-size:12.5px;color:#33334A">集团研发治理 · 100+ 项目</span><span data-page-node-id="uwkG5negcx1YwtbCHbpkHn" data-tag="deliver" style="margin:0;padding:5px 14px;box-sizing:border-box;-webkit-user-drag:none !important;background:#F7F7FB;border:1px solid #E7E7F0;border-radius:999px;font-size:12.5px;color:#33334A">重点项目交付 · 3 类项目</span><span data-page-node-id="GhK6Oqw87MA3188j0yEBtX" data-tag="system" style="margin:0;padding:5px 14px;box-sizing:border-box;-webkit-user-drag:none !important;background:#F7F7FB;border:1px solid #E7E7F0;border-radius:999px;font-size:12.5px;color:#33334A">体系从 0 到 1 · 4 件作品</span><span data-page-node-id="RKDFhuTgGVw6Ak94xI1dcD" data-tag="support" style="margin:0;padding:5px 14px;box-sizing:border-box;-webkit-user-drag:none !important;background:#F7F7FB;border:1px solid #E7E7F0;border-radius:999px;font-size:12.5px;color:#33334A">决策支撑 · 总裁层简报</span></div>
+        <div class="exp-body" id="expJobBody" data-page-node-id="qUTE0wfCoxlFOXreX0l302">
+          <div class="exp-inner" data-page-node-id="gjHEw5FbbsCKTqgcggAHwS"></div>
+        </div>
+      </div>
+
+      <div class="card exp-card" id="expEdu" data-page-node-id="57wUgxpC59AP4JblqceUZo" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+        <div class="exp-head" role="button" tabindex="0" aria-expanded="false" aria-controls="expEduBody" data-page-node-id="o0Fq4jQD9Pxuiiv7IyhgNs">
+          <span class="exp-head-main" data-page-node-id="gloElgT6SDNJppQoEbqPgj">
+            <span class="job-org" data-page-node-id="b3EDFJGxtrPrDOAoPMJQ33">西北农林科技大学（985）</span>
+            <span class="job-role" data-page-node-id="NUZSZFRvnl83ZFnulHF4tK"><b data-page-node-id="EduMajorB01">电子信息工程</b></span>
+          </span>
+          <span class="job-badge" data-page-node-id="EduTimeBadge01">教育经历 · 2017.09 – 2021.06</span>
+          <span class="exp-arrow" aria-hidden="true" data-page-node-id="PaFDnbtHo8RQdeTABfCK5z">▾</span>
+        </div>
+        <div class="edu-points" data-page-node-id="9HFNFHvpDvBA5lnQ2nyzk3">
+          <span data-page-node-id="LUH8jpm9mVaJbrlbixHWpI">GPA 3.31/4.0 · Top 15%</span>
+          <span data-page-node-id="da2W1QkwfMaXevi7WwCanj">第一作者 SCIE 论文（IF 12.7）</span>
+          <span data-page-node-id="LAtRvGDD1tRdXP5tBvLkqN">第二发明人 · 实用新型专利</span>
+          <span data-page-node-id="wiC7K9MhuAV64Byon3R1l3">多次专业奖学金</span>
+        </div>
+        <div class="exp-body" id="expEduBody" data-page-node-id="Brfucc7trwxHJBbOgRc1Wk">
+          <div class="exp-inner" data-page-node-id="g3Lo2Lp0gBLvuNzv18sU9Q"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 项目 -->
+<section id="projects" data-page-node-id="kVVkUKLQO8zrEw58VPT5Zd">
+  <div class="wrap" data-page-node-id="7QTPIW4zYV2zEX6nY2k4fk">
+    <div class="sec-head reveal in" data-page-node-id="b0xSVAY5wAf0sAeamde9e6">
+      <div class="eyebrow" data-page-node-id="A6S0IqI4AKi5Fw6s8baoxA">02 · Projects &amp; Portfolio</div>
+      <h2 class="sec-title" data-page-node-id="o8HF9PnbOdJcND7UzbLSI3" data-edit="sec_title_proj">项目</h2>
+    </div>
+
+    <div class="tabs reveal in" id="projModTabs" data-page-node-id="ProjModTabs01">
+      <button class="tab on" data-m="govern" data-page-node-id="ProjModTab01">集团研发 PMO 体系搭建与常态化运营</button>
+      <button class="tab" data-m="deliver" data-page-node-id="ProjModTab02">核心项目全周期操盘与价值闭环</button>
+      <button class="tab" data-m="support" data-page-node-id="ProjModTab03">管理效能优化与决策支撑</button>
+    </div>
+
+    <div class="card proj-mod reveal in" id="projModPanel" data-page-node-id="ProjModPanel01">
+      <div class="mod-panel on" data-m="govern" data-page-node-id="ProjModP01">
+        <p class="mod-summary" data-page-node-id="ProjModSum01">覆盖全集团研发项目组合管理、经费管控、数据合规与战略专项落地，建成可追溯的常态化管理机制。</p>
+        <div class="mod-item" data-page-node-id="ProjModItem011">
+          <h5 data-page-node-id="ProjModH01">研发管理体系搭建</h5>
+          <ul data-page-node-id="ProjModUl01">
+            <li data-page-node-id="ProjModLi0101">统筹 <b data-page-node-id="ProjModB0101">20+ 家业务单元、100+ 个集团级研发项目</b>的年度计划编制及管理，统一项目分类标准与产出目标；</li>
+            <li data-page-node-id="ProjModLi0102">搭建研发经费<b data-page-node-id="ProjModB0102">月度统计复核机制</b>，月均审查千万元研发费用；</li>
+            <li data-page-node-id="ProjModLi0103">深挖研发项目与经费两端脱节的核心卡点，推动形成「投入—产出」一体化闭环管理体系思路。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail01"><div data-page-node-id="HRpAMEC5CURMqXfJC58rKw" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+        <div class="mod-item" data-page-node-id="ProjModItem012">
+          <h5 data-page-node-id="ProjModH02">研发数据治理与合规管控</h5>
+          <ul data-page-node-id="ProjModUl02">
+            <li data-page-node-id="ProjModLi0201">针对管理口径不统一、数据未打通的长期痛点，组织近 20+ 家业务单元、<b data-page-node-id="ProjModB0201">500+ 个跨年度课题</b>补录入统，守住研发费用与财务账面一致的勾稽红线；</li>
+            <li data-page-node-id="ProjModLi0202">支撑国资委央企巡视核查实现零问题反馈，建成集团首份口径一致、可核查、可追溯的<b data-page-node-id="ProjModB0202">研发全景台账</b>；</li>
+            <li data-page-node-id="ProjModLi0203">支撑对上专项从研发到财务的多类数据快速调取与核对。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail02"><div data-page-node-id="6WWVAKBB7HfPcAxpUKEbVc" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+        <div class="mod-item" data-page-node-id="ProjModItem013">
+          <h5 data-page-node-id="ProjModH03">战略专项统筹与战略支撑</h5>
+          <ul data-page-node-id="ProjModUl03">
+            <li data-page-node-id="ProjModLi0301">年均统筹 <b data-page-node-id="ProjModB0301">30+ 项重点专项行动</b>，高效承接国资委及母公司下达的标准化任务并拆解落地；</li>
+            <li data-page-node-id="ProjModLi0302">负责华润「十五五」科技规划重点技术布局，统筹 AI+医药、集成电路等 <b data-page-node-id="ProjModB0302">6 大领域、14 家兄弟单位</b>，完成多源领域信息的结构化归并与体系重构；</li>
+            <li data-page-node-id="ProjModLi0303">牵头央企改革深化提升行动专项，追踪跨度 3 年、涵盖 4 大方向 10 项任务的落实落地。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail03"><div data-page-node-id="PKofJAgsoIxeduJg3iVQUB" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+      </div>
+
+      <div class="mod-panel" data-m="deliver" data-page-node-id="ProjModP02">
+        <p class="mod-summary" data-page-node-id="ProjModSum02">牵头典型场景项目全流程管控，覆盖政府专项、内部自研降本、生态合作交付三类场景，实现进度、成本、质量目标对齐。</p>
+        <div class="mod-item" data-page-node-id="ProjModItem021">
+          <h5 data-page-node-id="ProjModH04">AI 超分辨率显示系统研发项目<span class="dim" data-page-node-id="ProjModDim01">深圳市技术攻关重点项目</span></h5>
+          <ul data-page-node-id="ProjModUl04">
+            <li data-page-node-id="ProjModLi0401">牵头统筹申报与执行管理（4 家联合单位、总投资 <b data-page-node-id="ProjModB0401">2060 万元</b>），主导研判专项政策导向与评审规则，争取市区两级累计 <b data-page-node-id="ProjModB0402">843.2 万元</b>财政资助；</li>
+            <li data-page-node-id="ProjModLi0402">搭建全周期项目台账，落地「固定跨单位例会 + 周报」进度同步机制，建立分级风险预警台账；</li>
+            <li data-page-node-id="ProjModLi0403">管控体系在中期移交后持续运行，支撑项目通过多轮政府阶段性考核并完成正式结案。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail04"><div data-page-node-id="PiZNgft4ODryNEBvRA1u27" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+        <div class="mod-item" data-page-node-id="ProjModItem022">
+          <h5 data-page-node-id="ProjModH05">远场语音自研替代项目<span class="dim" data-page-node-id="ProjModDim02">自研替代 · 降本</span></h5>
+          <ul data-page-node-id="ProjModUl05">
+            <li data-page-node-id="ProjModLi0501">针对远场语音能力 100% 依赖第三方、年固定采购成本超 150 万的痛点，组织 3 家方案商比选及 10+ 轮合同谈判，明确交付 SLA 与成本权责边界；</li>
+            <li data-page-node-id="ProjModLi0502">统筹 <b data-page-node-id="ProjModB0501">15 人跨部门研发团队</b>推进需求与功能落地，组织三轮系统测试闭环 <b data-page-node-id="ProjModB0502">14 项核心遗留问题</b>；</li>
+            <li data-page-node-id="ProjModLi0503">预计实现年降本 <b data-page-node-id="ProjModB0503">37%</b>，核心性能指标（唤醒率、卖场识别率）提升超 30%，性能远超原第三方方案。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail05"><div data-page-node-id="sArbmAMCY1KZsqa3FeajbE" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+        <div class="mod-item" data-page-node-id="ProjModItem023">
+          <h5 data-page-node-id="ProjModH06">智能冰箱研发项目<span class="dim" data-page-node-id="ProjModDim03">跨企业联合</span></h5>
+          <ul data-page-node-id="ProjModUl06">
+            <li data-page-node-id="ProjModLi0601">承担招标书编制、合同签订及集团内部全流程审批推进，协调多个业务单元、外部供应商与甲方三方节奏对齐；</li>
+            <li data-page-node-id="ProjModLi0602">对标集团考核规则独立申报「创新共建产品业绩免考核」政策并成功获批，为参与业务单位豁免考核额度 <b data-page-node-id="ProjModB0601">317 万元</b>；</li>
+            <li data-page-node-id="ProjModLi0603">两款样机按期通过甲方终验，于中国移动全球合作伙伴大会首发，实现集团侧净收益约 <b data-page-node-id="ProjModB0602">60 万元</b>。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail06"><div data-page-node-id="9xxCX5RQ69QdcqpAixgpJU" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+      </div>
+
+      <div class="mod-panel" data-m="support" data-page-node-id="ProjModP03">
+        <p class="mod-summary" data-page-node-id="ProjModSum03">从信息精简、技术协同两个维度补齐管理短板，为高层决策、业务协同提供可落地的抓手。</p>
+        <div class="mod-item" data-page-node-id="ProjModItem031">
+          <h5 data-page-node-id="ProjModH07">集团科技情报体系搭建</h5>
+          <ul data-page-node-id="ProjModUl07">
+            <li data-page-node-id="ProjModLi0701">面向集团总裁层设计情报采集框架与研判规则，联动技术团队搭建覆盖 <b data-page-node-id="ProjModB0701">21 个数据源、31 家核心竞对</b>的分层关键词抓取体系；</li>
+            <li data-page-node-id="ProjModLi0702">建立按四维标准的信息筛选机制，全年输出《科技简报》<b data-page-node-id="ProjModB0702">13 期</b>，将系统月均抓取的约 10000 条零散信息浓缩为决策层 1 分钟可读完的核心参考；</li>
+            <li data-page-node-id="ProjModLi0703">其中一期聚焦消费电子用户洞察，打通呼叫中心客诉、京东官旗评论等一线用户数据源，输出洞察结论直接支撑产品改进与客诉治理动作。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail07"><div data-page-node-id="oS7PwK1bw0sw1tNPIIJs3M" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+        <div class="mod-item" data-page-node-id="ProjModItem032">
+          <h5 data-page-node-id="ProjModH08">PCB 业务技术路线搭建</h5>
+          <ul data-page-node-id="ProjModUl08">
+            <li data-page-node-id="ProjModLi0801">针对集团 PCB 技术能力分散于不同业务单元、技术口径不统一的痛点，自主设计技术路线框架（覆盖 <b data-page-node-id="ProjModB0801">19 个一级制程、42 个二级工序</b>），统一技术术语与产品归类标准；</li>
+            <li data-page-node-id="ProjModLi0802">迭代形成跨单元 PCB 能力矩阵，整套集团级技术路线获得一线团队认可；</li>
+            <li data-page-node-id="ProjModLi0803">反向支撑创新点挖掘、项目立项与资金争取工作，为集团科技创新管理补上可落地的技术基底。</li>
+          </ul>
+          <div class="mod-detail" data-page-node-id="ProjModDetail08"><div data-page-node-id="zH0xjXhbxiZX5Fs1eunDfK" class="mod-detail-inner" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;padding-top:14px;overflow:hidden"></div></div>
+        </div>
+      </div>
+    </div>
+
+</div></section>
+
+<!-- 03 技能 -->
+<section id="skills" data-page-node-id="mSZv1gE9EtvBycDraN9YrS">
+  <div class="wrap" data-page-node-id="AURBOX6QPC2zbg7UdOwTTF">
+    <div class="sec-head reveal in" data-page-node-id="6LyNdUFu5xkXUtJEB3R7K0">
+      <div class="eyebrow" data-page-node-id="7HkPiHK48AnJtXRG9TgqBj">03 · Skills &amp; Method</div>
+      <h2 class="sec-title" data-page-node-id="2EgV7yEwtGxnrUBzPCelPJ" data-edit="sec_title_skill">技能</h2>
+    </div>
+
+    <div class="skill-grid" data-page-node-id="OiqyQtjqJWVpWozPKMgdB9">
+      <div class="card skill-card reveal in" data-page-node-id="9BYQ64VriyF4WySlI7jA06">
+        <h3 data-page-node-id="VnlYXCHiqc1saeqMi2bzuA"><span class="ic" data-page-node-id="pvY9KO9krncibElBg2CZYj">📐</span>项目管理</h3>
+        <ul data-page-node-id="Q4gU9EA659CtfaOys9hv5E">
+          <li data-page-node-id="iWioQ0y8LOpy9nq4O413pA">IPD 集成产品研发框架</li>
+          <li data-page-node-id="enuSjF6FTALUhiV7YP3uWJ">里程碑拆解 · WBS · 阶段/决策评审</li>
+          <li data-page-node-id="ocCiZrvZPCoqPyKqUjm0sY">进度跟踪 · 风险预警 · 需求与范围管控</li>
+          
+          <li data-page-node-id="3vFf1FTCtH5wxhvFWBE9bV">研发经费合规管控</li>
+          <li data-page-node-id="WOCe7Aky49tf15SAoZScVU">合同谈判与变更管理</li>
+          <li data-page-node-id="qKxtTf4jl1LPHdlwCzehY1">多利益相关方协同（跨单元/供应商/政企）</li>
+        </ul>
+      </div>
+      <div class="card skill-card reveal in" data-page-node-id="1LqgTByuvpjttPlkEtOPxy">
+        <h3 data-page-node-id="MdcyvCcFx2BzUjiABaiA6x"><span class="ic" data-page-node-id="Qk43rU4hZK2Cm1NqCYt8GP">🧰</span>工具应用</h3>
+        <ul data-page-node-id="48OhKAJS9pb3oAXaqR9BWa">
+          <li data-page-node-id="rkbwkpfRKKhHdvm32WD1Ws">Excel（函数 / 数据透视表）</li>
+          <li data-page-node-id="vUpTDbIpmYCrLDMGQVTIvr">PPT · Word 项目汇报输出</li>
+          <li data-page-node-id="lgFXGnKhLBjaGZ5XKbEQ3J">大模型与 AI Agent 提效工作流</li>
+          <li data-page-node-id="sJLbAKeLabl5lp7IL3HJyJ">文档初稿生成 · 跨渠道信息汇总</li>
+          <li data-page-node-id="Ftg5ps3LXHVC0UPLXLxOTC">会议纪要结构化提取</li>
+          <li data-page-node-id="WYAACwz1kRfAWqXAi05Q9C">进度数据整合与台账管理</li>
+        </ul>
+      </div>
+      <div class="card skill-card reveal in" data-page-node-id="c1WkDkNuFA5JoBq8NJEwWU">
+        <h3 data-page-node-id="M39m3K6jK5x7XU4LSYVpvE"><span class="ic" data-page-node-id="iWj52yW1fGW4eZcG5rJVN2">🎓</span>语言与证书</h3>
+        <ul data-page-node-id="a5wDLLfcaryQEDqcz5i4F5">
+          <li data-page-node-id="Jimw4kcB9JxGAGZzbPDn4p">英语 CET-6（537 分）</li>
+          <li data-page-node-id="yx6aq1NNDoaam6iiusZg03">德语德福（14 分）</li>
+          <li data-page-node-id="GNdm0mThfnDCLEmARnh3aA">电子元器件助理工程师</li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+</div></section>
+
+<!-- 04 生活 -->
+<section id="life" data-page-node-id="cXQTDCxd86AW0lJC2sValy">
+  <div class="wrap" data-page-node-id="dCu4qtvlhh9psjdATwufnz">
+    <div class="sec-head reveal in" data-page-node-id="flzb8JHCT6H08xxzKWrkiQ">
+      <div class="eyebrow" data-page-node-id="oUBdhtGOuOXkFJ8fNp72NG">04 · Beyond Work</div>
+      <h2 class="sec-title" data-page-node-id="h3nUEM3yFKC58f5YeJ8gYn" data-edit="sec_title_life">生活</h2>
+    </div>
+
+    <div class="life-grid" data-page-node-id="9svPOCB83ychcaejlEGEDT">
+      <div class="life-ip reveal in" data-page-node-id="ZAQqteG3atBtDjVwYxjD3f">
+        
+        <img data-page-node-id="7rScF3MKEfCyLqLVqUnpTk" class="ip-wave" src="assets/ip-wave.png" alt="小野 IP 形象 · 挥手打招呼" draggable="false" style="margin:0;padding:0;box-sizing:border-box;-webkit-user-drag:none !important;width:min(150px,38vw);display:block;animation:none"><div class="life-tabs" id="lifeTabs" data-page-node-id="miirL3tWxGlp4F5BRCUaT4">
+          <button class="on" data-c="dance" data-page-node-id="O4HXEWs3BDULO22mTGYZap" data-edit="life_tab1">跳舞</button>
+          <button data-c="travel" data-page-node-id="fLdCvFAfE3MWsFUSp9K16S" data-edit="life_tab2">旅游</button>
+          <button data-c="read" data-page-node-id="1yTj0iubF8SGsVxxD413pW" data-edit="life_tab3">阅读</button>
+        </div>
+        <p class="life-caption" id="lifeNote" style="text-align:center;font-size:13px;color:var(--muted);margin:14px 0 0;letter-spacing:.5px"></p>
+        
+      </div>
+
+      <div data-page-node-id="CAzIIuvrKZEdcMRg3W32ra">
+        <div class="photo-stack" id="photoStack" data-page-node-id="fXsMqSoVH8oWlSg6GmFfrk">
+      <div class="photo has-img show" data-i="0" style="width:36%;aspect-ratio:0.75;left:12%;top:6%;--d:0ms">
+        <video src="assets/life-dance-1.mp4" poster="assets/life-dance-1-poster.jpg" muted loop playsinline autoplay preload="auto"></video>
+      </div>
+      <div class="photo has-img show" data-i="1" style="width:34%;aspect-ratio:0.75;left:52%;top:16%;--d:70ms">
+        <video src="assets/life-dance-2.mp4" poster="assets/life-dance-2-poster.jpg" muted loop playsinline autoplay preload="auto"></video>
+      </div></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 岗位意向（导航外区块） -->
+<section id="intent" data-page-node-id="E8b9gug6SirUcPpTHilrx5">
+  <div class="wrap" data-page-node-id="96hfYbP6fBB3OolwAQuj1o">
+    <div class="sec-head reveal in" data-page-node-id="xOX5JIlxxyZGEpbDwbQjIF">
+      <div class="eyebrow" data-page-node-id="l4NTvKf4PtzIX1gVMbzB7C">Where I Fit</div>
+      <h2 class="sec-title" data-page-node-id="xvXoZ6NR6qun2CyrBtTqOR" data-edit="sec_title_intent">我在找的机会</h2>
+    </div>
+
+    <div class="toggle reveal in" id="trackToggle" data-page-node-id="fJG2wrWPMkzdQGMUzIH7I2">
+      <button class="on" data-t="pm" data-page-node-id="uLvVdnKTaMCHZ2NWTe4WbT" data-edit="intent_tog1">项目经理 · 交付导向</button>
+      <button data-t="pmo" data-page-node-id="11oKSPwXiWQGad0PEizJpt" data-edit="intent_tog2">PMO / 科技管理 · 治理导向</button>
+    </div>
+
+    <div class="tracks" data-page-node-id="TGHj5WtN8w5aNmS0DH5byp">
+      <div class="card track featured reveal in" id="trackPm" data-page-node-id="jIpgdba2uEkJ1DXJTwEJhm">
+        <span class="badge" data-page-node-id="ApBJAxH7ar4pjVuIcYrCK7">主投方向</span>
+        <div class="kind" data-page-node-id="GEao34RrqAcbuRfcg28Wzv">DELIVERY · 交付导向</div>
+        <h3 data-page-node-id="MidsVcNGoMXAWRLF0p29ZV">项目经理</h3>
+        <div class="slogan" data-page-node-id="I3tHukQpELLfndANEq59bO">「把不确定的项目，管成可交付的节点。」</div>
+        <ul data-page-node-id="rFFD9VlAAQwm95mzlNZzQw">
+          <li data-page-node-id="Cfq2C9iEw9D2Vtu7rGBQlB">全周期项目操盘：申报立项、合同谈判、执行管控、验收回款</li>
+          <li data-page-node-id="MK5n79BVyg6MDesSpah7EN">跨主体协同：政企部门、高校、供应商、内部多单元利益对齐</li>
+          <li data-page-node-id="9S66UQd9Ki2MFHjX8ixnoR">进度 / 成本 / 质量三线对齐，外部硬节点倒逼内部节奏</li>
+          <li data-page-node-id="svUWUkcS0IEXaonf0C6BJZ">风险预警与问题闭环：分级台账、责任人、关闭时间</li>
+        </ul>
+      </div>
+
+      <div class="card track reveal in" id="trackPmo" data-page-node-id="qHb5RDMI42mvgCHactxcJ2">
+        <div class="kind" data-page-node-id="DGFW4CKxPZkY4zov36hk7L">GOVERNANCE · 治理导向</div>
+        <h3 data-page-node-id="GrHHEKuEV2EdHO5lNq22KD">PMO / 科技管理</h3>
+        <div class="slogan" data-page-node-id="m8saJfpqyttd4sRncWroYM">「把分散的经验，沉淀成组织的底座。」</div>
+        <ul data-page-node-id="TlusWaD9bloviCsvurURGe">
+          <li data-page-node-id="eC1RivJ8leRWzFG1oQGu5H">研发项目组合管理：年度计划编制、分类标准、产出目标设定</li>
+          <li data-page-node-id="YKjBlMaWjYzNbqDfhqVGDU">体系与机制搭建：制度参与修订、流程设计、从试点到固化</li>
+          <li data-page-node-id="w0xbVwAevf81144yP0TsNx">数据治理：台账体系、口径统一、业财勾稽与质量管控</li>
+          <li data-page-node-id="krnxKH8PQHrzRildUfXIqC">对上专项：母公司 / 监管要求的转译、拆解、组织与复核</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 联系我 -->
+<section id="contact" data-page-node-id="nm9ao9FMbs1Drn8syW3NAy">
+  <div class="wrap" data-page-node-id="sgMbQXlNpUFhxNUpyf0WnR">
+    <div class="cta-band reveal in" data-page-node-id="uI9LXo0xkjEo2WRnrWsZsH">
+      <div data-page-node-id="pmiCnPqQuu8RGrpXgMRs6n">
+        <div class="eyebrow" style="color:rgba(255,255,255,.75)" data-page-node-id="2vMKuOpFXLlrfVEZLp2JoD" data-edit="ct_eyebrow">Contact</div>
+        <h2 data-page-node-id="1YDqhP1Kjrf4oVwUXwmKHe" data-edit="ct_title">谢谢看到这里</h2>
+        <p data-page-node-id="VyglgVoeKMam35Wv1LG66C" data-edit="ct_intro">可即时到岗，期待参与方案与真实业务落地。</p>
+        <div class="cta-lines" data-page-node-id="AhbN6OIPrGt7ijtKpsmc4i">
+          <a class="ct-line" href="mailto:815192770@qq.com?subject=%E6%9D%A5%E8%87%AA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E7%9A%84%E9%82%80%E7%BA%A6" data-page-node-id="wEJQL0l0bOG8RGWa5RPkEb" data-edit="ct_email" data-copy="815192770@qq.com" style="cursor: pointer;"><svg class="ct-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-page-node-id="1BmEG1dpNGK3M7UoFnULRN"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5" data-page-node-id="47QccGRbr7Fiz2JAmN0NYV"></rect><path d="M3 7.2l9 6 9-6" data-page-node-id="6kQkm40BOjsemITDjqkDy2"></path></svg>邮箱：815192770@qq.com</a>
+          <a class="ct-line" href="tel:15086717332" data-page-node-id="QwG8JEF8kKwAVETjepFRIb" data-edit="ct_phone" data-copy="15086717332" style="cursor: pointer;"><svg class="ct-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-page-node-id="xz50eoCGkew0QBRXAroCrj"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5" data-page-node-id="fkGClgIQ3lN3Xfe3ompxeY"></rect><path d="M10.5 5.6h3" data-page-node-id="Zn2XED3vLjHgWQ2DSYV4vq"></path><path d="M11 18.9h2" data-page-node-id="F9TSnHlRenRkJo1qbPXKNl"></path></svg>手机：15086717332</a>
+          <span class="ct-line" data-edit="ct_wechat" data-copy="z815192770" data-page-node-id="CkkB5EzQSeSjboBc8bF3Lf" style="cursor: pointer;"><svg class="ct-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-page-node-id="fkRmTp9EB7cxQBsYox9OYp"><path d="M9.2 4.2C5.7 4.2 2.9 6.7 2.9 9.7c0 1.7.9 3.2 2.3 4.2l-.7 2.1 2.6-1.3c.6.2 1.3.3 2.1.3" data-page-node-id="SVBNVZ5FoehX2SH5V5kwoE"></path><path d="M21.1 14.1c0-2.6-2.6-4.7-5.8-4.7s-5.8 2.1-5.8 4.7c0 1.6.8 3 2 4l-.5 1.7 2.2-1.1c.7.2 1.4.3 2.1.3 3.2 0 5.8-2.1 5.8-4.7Z" data-page-node-id="rzw61n6rvWcQQfsJEwmImz"></path><circle cx="7.6" cy="8.6" r=".85" fill="currentColor" stroke="none" data-page-node-id="mEgrspUAgFsGKCRhpcx3Ie"></circle><circle cx="12.2" cy="8.6" r=".85" fill="currentColor" stroke="none" data-page-node-id="zRAKXJRPWk0XXTrwfvHWFb"></circle><circle cx="16.2" cy="13.6" r=".85" fill="currentColor" stroke="none" data-page-node-id="pCgkt5yfBdljm5hwBCOCB1"></circle><circle cx="19.4" cy="13.6" r=".85" fill="currentColor" stroke="none" data-page-node-id="QS9AyAxCbG22MRKDoA7crp"></circle></svg>微信：z815192770</span>
+          <small class="ct-hint" data-page-node-id="xE3cffCgYVvteksZXnPGc0">点击即可复制</small>
+        </div>
+      </div>
+      <div class="cta-btns" data-page-node-id="dNVUvq76tNLiGuHmFFoDAT">
+        <a class="btn-white" href="张心怡_简历_项目经理.docx" download="" data-page-node-id="qvRbh8PnZ9CaIOPMQTymN4" data-edit="ct_btn_dl">↓ 下载我的简历</a>
+        <a class="btn-s on-dark" href="mailto:815192770@qq.com?subject=%E6%9D%A5%E8%87%AA%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E7%9A%84%E9%82%80%E7%BA%A6" data-page-node-id="O6N3eLvp6MjxS5OD1g6LV5" data-edit="ct_btn_mail">发邮件聊聊</a>
+      </div>
+    </div>
+    <a class="btn-back" href="#top" data-page-node-id="vPnEPQSQIF8F9rpAh34LvV">↑ 回到顶部</a>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer data-page-node-id="6npsoP2Ue1lMrQm7nyXe73">
+  <div class="foot-grid" data-page-node-id="GLLyvwkZT2YQxvddZk2A7h">
+    <div class="foot-col" data-page-node-id="BJNyZabDkYqCzUxfJ4VdXG">
+      <h4 data-page-node-id="kcGUOQLcNZVoiCvSgX5efN">导航</h4>
+      <a href="#top" data-page-node-id="ScBW4R5jcLUSI3hNMQYRnt">回到顶部</a><a href="#experience" data-page-node-id="c6DNdARr2BK3QPf9I1KO7t">经历</a><a href="#projects" data-page-node-id="BNvmhRBAWPmRghaRllT95O">项目</a><a href="#skills" data-page-node-id="HzsY7wsBw8wHWVpj02k85R">技能</a><a href="#life" data-page-node-id="YHLSisur0nzab44kJCibHS">生活</a><a href="#contact" data-page-node-id="K4Myhhj99qpjD9rP3mMPZe">联系我</a>
+    </div>
+    <div class="foot-col" data-page-node-id="LXFRfxNxuhupbcE5RCd1kk">
+      <h4 data-page-node-id="4DuwqAsizz623Rx4oxqjE2">经历</h4>
+      <a href="#experience" data-page-node-id="GneFEMZ3LAFIubnGxIQxB0">康佳集团 · 科技创新项目主管</a><a href="#experience" data-page-node-id="SNGk37IfcmiF3HVY49EG0g">西北农林科技大学 · 电子信息工程</a><a href="#projects" data-page-node-id="d2HrUL21IdK3CkqOvJ0OUV">三类重点项目</a>
+    </div>
+    <div class="foot-col" data-page-node-id="oiAEhDcn9w3YhTF35OS9qU">
+      <h4 data-page-node-id="wcqjDrV2gYm5sMB3h8LvYt">项目</h4>
+      <a href="#projects" data-page-node-id="GKAEYDbbljL4BX85MFadpL">AI 超分辨率</a><a href="#projects" data-page-node-id="v0EVEiS98tyW9kpCN80NBj">远场语音自研替代</a><a href="#projects" data-page-node-id="t3byn2YYNJxoPEjTydAMU6">智能冰箱研发</a><a href="#projects" data-page-node-id="0Gl2weqj4VS9QVjIazQ3P0">治理与支撑</a>
+    </div>
+    <div class="foot-col" data-page-node-id="mczmUXnAZ6VDoCiAqTavsM">
+      <h4 data-page-node-id="sQBTYxe8aLmjfM8CkjcSaU">作品</h4>
+      <a href="#projects" data-page-node-id="XMbFkdkX3YUht8nBcNyYgt">科技情报体系</a><a href="#projects" data-page-node-id="FMPugE6ovMzOl7vj49de3T">研发全景台账</a><a href="#projects" data-page-node-id="DHB0sRcfjKxalu5dQ5ZGqt">PCB 技术路线</a><a href="#projects" data-page-node-id="G4Og2d0qfz6C4dH0bQ3zx9">「十五五」统稿</a>
+    </div>
+    <div class="foot-col" data-page-node-id="C40VO5QobOzA5DHsxXk26V">
+      <h4 data-page-node-id="GrS6AyEJIVsxyEQLjLlYqG">意向</h4>
+      <a href="#intent" data-page-node-id="8hTju45RzodEKuYRFN8eaP">项目经理</a><a href="#intent" data-page-node-id="91ybALxHH95hD33KoOU1jy">PMO / 科技管理</a><a href="#contact" data-page-node-id="LzxS9yZgYpzjedJQtowqld">合作方式</a>
+    </div>
+    <div class="foot-col" data-page-node-id="NLxmzHVqOJWxlPfMytkAuX">
+      <h4 data-page-node-id="t3fIA4YMcReIglWVEqX3FE">联系</h4>
+      <a href="mailto:815192770@qq.com" data-page-node-id="lENzzUo4BkIVtylQvUgWz4">815192770@qq.com</a><a href="tel:15086717332" data-page-node-id="ZlCWa8ytQ1S7GbWm0aqMo3">15086717332</a><a href="#top" data-page-node-id="ecmOLu55OHxBKERqsniTMT">深圳</a>
+    </div>
+  </div>
+  <div class="foot-base" data-page-node-id="fa184Wqjyxsgvn61MmU5Jc">
+    <span data-page-node-id="vuFgcjWC6OXTfaSVWRiIgt" data-edit="foot_copy">© 2026 张心怡 · SUGAR ZHANG · 项目经理 / PMO</span>
+    <div class="socials" data-page-node-id="e3OoCukGngDc4YlvApXtk0">
+      <a href="mailto:815192770@qq.com" aria-label="邮箱" data-page-node-id="WForDvBqSv4ILI1OHbzDVp"><svg viewBox="0 0 24 24" data-page-node-id="laxi5AJI83agd1MnmgYvBA"><rect x="3" y="5" width="18" height="14" rx="2" data-page-node-id="Ih2jNPU2nUYfj3dup2d1hQ"></rect><path d="M3 7l9 6 9-6" data-page-node-id="NyTJ0k9tNgsfLDnKwdF5wJ"></path></svg></a>
+      <a href="tel:15086717332" aria-label="电话" data-page-node-id="AhSyodnA3kIyo68EP3Aza0"><svg viewBox="0 0 24 24" data-page-node-id="1pw50xZd6FCH86yGCtbnnQ"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" data-page-node-id="DRMosWuHNhcDYPKSGLuZcD"></path></svg></a>
+      <a href="#top" aria-label="位置" data-page-node-id="BjhKGEibLLZM3KzUQHG9uy"><svg viewBox="0 0 24 24" data-page-node-id="viR74cD8kTBWcIlLeYD0e0"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" data-page-node-id="dZQHvyD0u5NupxjrqqlKUJ"></path><circle cx="12" cy="10" r="2.5" data-page-node-id="tc8vYTeBqbD1eITRxGyLdw"></circle></svg></a>
+    </div>
+  </div>
+</footer>
+
+<a class="totop show" id="totop" href="#top" aria-label="回到顶部" data-page-node-id="IgRAtVGklP8Bnj02m5j40p">↑</a>
+
+<script src="vendor/gsap.min.js"></script>
+<script>
+/* ================= 经历卡片：折叠展开 ================= */
+(function(){
+  function setExp(card, open){
+    var body = card.querySelector('.exp-body');
+    var head = card.querySelector('.exp-head');
+    if(open){
+      card.classList.add('open');
+      head.setAttribute('aria-expanded','true');
+      body.style.maxHeight = body.scrollHeight + 'px';
+      body.addEventListener('transitionend', function te(){
+        if(card.classList.contains('open')) body.style.maxHeight = 'none';
+        body.removeEventListener('transitionend', te);
+      });
+    }else{
+      if(body.style.maxHeight === 'none' || body.style.maxHeight === ''){
+        body.style.maxHeight = body.scrollHeight + 'px';
+        void body.offsetHeight; /* 强制回流：从 none 收回时也保留过渡 */
+      }
+      requestAnimationFrame(function(){
+        card.classList.remove('open');
+        head.setAttribute('aria-expanded','false');
+        body.style.maxHeight = '0px';
+      });
+    }
+  }
+  document.querySelectorAll('.exp-card').forEach(function(card){
+    var head = card.querySelector('.exp-head');
+    head.addEventListener('click', function(){
+      setExp(card, !card.classList.contains('open'));
+    });
+    head.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); head.click(); }
+    });
+  });
+  /* 即点即改模式下聚焦折叠卡内文字时自动展开 */
+  document.addEventListener('focusin', function(e){
+    var t = e.target;
+    if(!t || !t.isContentEditable) return;
+    var card = t.closest ? t.closest('.exp-card') : null;
+    if(card && !card.classList.contains('open')) setExp(card, true);
+  });
+})();
+</script>
+<script>
+/* ================= 项目部分：三大模块选项卡切换 ================= */
+(function(){
+  var tabs = document.getElementById('projModTabs');
+  if(!tabs) return;
+  var wrap = document.getElementById('projModPanel');
+  var panels = Array.prototype.slice.call(document.querySelectorAll('#projModPanel .mod-panel'));
+  var hoverTimer = null, animTimer = null;
+  var HOVER_DELAY = 120; /* 悬停防抖：鼠标停留够久才切换，快速划过不误触发 */
+
+  /* 离屏测量面板高度（用于切换时容器高度平滑过渡，避免跳动） */
+  function measure(p){
+    p.style.display = 'block';
+    p.style.position = 'absolute';
+    p.style.width = '100%';
+    p.style.visibility = 'hidden';
+    var h = p.offsetHeight;
+    p.style.display = '';
+    p.style.position = '';
+    p.style.width = '';
+    p.style.visibility = '';
+    return h;
+  }
+
+  function activate(btn){
+    if(!btn || btn.classList.contains('on')) return;
+    var next = null;
+    panels.forEach(function(p){ if(p.dataset.m === btn.dataset.m) next = p; });
+    if(!next) return;
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!wrap || reduce){
+      tabs.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('on'); });
+      btn.classList.add('on');
+      panels.forEach(function(p){ p.classList.toggle('on', p === next); });
+      return;
+    }
+
+    var fromH = wrap.offsetHeight;
+    var toH = measure(next);
+
+    wrap.style.overflow = 'hidden';
+    wrap.style.height = fromH + 'px';
+    void wrap.offsetHeight; /* 强制 reflow，确保起点生效 */
+    wrap.style.transition = 'height .42s cubic-bezier(.14,1,.34,1)';
+    wrap.style.height = toH + 'px';
+
+    tabs.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    panels.forEach(function(p){ p.classList.toggle('on', p === next); });
+
+    clearTimeout(animTimer);
+    animTimer = setTimeout(function(){
+      wrap.style.height = '';
+      wrap.style.transition = '';
+      wrap.style.overflow = '';
+    }, 460);
+  }
+
+  /* 悬停即切换（主要交互，带防抖延迟） */
+  tabs.addEventListener('mouseover', function(e){
+    var btn = e.target.closest ? e.target.closest('.tab') : null;
+    if(!btn) return;
+    clearTimeout(hoverTimer);
+    hoverTimer = setTimeout(function(){ activate(btn); }, HOVER_DELAY);
+  });
+  tabs.addEventListener('mouseleave', function(){ clearTimeout(hoverTimer); });
+
+  /* 点击 / 触屏：保留，触屏无 hover 时仍可切换 */
+  tabs.addEventListener('click', function(e){
+    var btn = e.target.closest ? e.target.closest('.tab') : null;
+    if(btn){ clearTimeout(hoverTimer); activate(btn); }
+  });
+
+  /* 键盘可达：Tab 聚焦即切换 */
+  tabs.addEventListener('focusin', function(e){
+    var btn = e.target.closest ? e.target.closest('.tab') : null;
+    if(btn) activate(btn);
+  });
+})();
+
+/* ================= 项目部分：小节「详细」展开 ================= */
+(function(){
+  document.querySelectorAll('.mod-more').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.closest('.mod-item');
+      if(!item) return;
+      var open = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+})();
+
+/* ================= 经历卡片：GSAP 交错入场（每帧延迟 80ms） ================= */
+(function(){
+  var grid = document.getElementById('expGrid');
+  var cards = document.querySelectorAll('.exp-card');
+  if(!grid || !cards.length || !window.gsap) return; /* GSAP 缺失时卡片直接可见 */
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  gsap.set(cards, {opacity:0, y:28});
+  var io = new IntersectionObserver(function(es, obs){
+    es.forEach(function(en){
+      if(!en.isIntersecting) return;
+      gsap.to(cards, {opacity:1, y:0, duration:.7, ease:'power3.out', stagger:.08});
+      obs.disconnect();
+    });
+  }, {threshold:.12});
+  io.observe(grid);
+})();
+</script>
+<script>
+  /* ================= 生活区照片堆 =================
+     默认收成堆叠态（只露角）；鼠标进入照片区或点左侧标签 → 扇形展开；
+     悬停单张 → 放大上浮；离开 → 收回堆叠。书封按真实宽高比立卡，无白边不裁切 */
+  const lifeData = {
+    dance: {
+      note: "去舞室从基础磕到中级<br>八拍之内有进步就开心",
+      photos: [
+        {vid:"assets/life-dance-1.mp4", ar:0.75, w:"36%", l:"12%", t:"6%"},
+        {vid:"assets/life-dance-2.mp4", ar:0.75, w:"34%", l:"52%", t:"16%"}
+      ]
+    },
+    travel: {
+      note: "想去的地方列了清单<br>走过一段就记一段",
+      photos: [
+        {img:"assets/life-travel-1.jpg", w:"56%", h:"74%", l:"2%", t:"4%"},
+        {img:"assets/life-travel-2.jpg", w:"52%", h:"70%", l:"30%", t:"16%"},
+        {img:"assets/life-travel-3.jpg", w:"50%", h:"66%", l:"56%", t:"6%"}
+      ]
+    },
+    read: {
+      note: "纪实、推理、跑步都看<br>好书会不停安利",
+      photos: [
+        {img:"assets/life-read-1.jpg", ar:0.705, w:"29%", l:"3%", t:"12%"},
+        {img:"assets/life-read-2.jpg", ar:0.693, w:"30%", l:"20%", t:"6%"},
+        {img:"assets/life-read-3.jpg", ar:0.672, w:"30%", l:"38%", t:"0%"},
+        {img:"assets/life-read-4.jpg", ar:0.705, w:"30%", l:"56%", t:"6%"},
+        {img:"assets/life-read-5.jpg", ar:0.702, w:"28%", l:"72%", t:"14%"}
+      ]
+    }
+  };
+
+  const stack = document.getElementById('photoStack');
+  const lifeNote = document.getElementById('lifeNote');
+  let hoverIdx = null;       /* 指针当前悬停的牌 */
+  let pinIdx = null;         /* 点击置顶的牌 */
+
+  /* 计算每张牌的「堆叠态」位移与旋转（写入 CSS 变量供 transform 使用） */
+  function layoutPile(){
+    const photos = Array.from(stack.querySelectorAll('.photo'));
+    const n = photos.length;
+    if(!n) return;
+    const mid = (n-1)/2;
+    const px0 = stack.clientWidth*0.5, py0 = stack.clientHeight*0.52;
+    photos.forEach((ph,i)=>{
+      const cx = ph.offsetLeft + ph.offsetWidth/2;
+      const cy = ph.offsetTop + ph.offsetHeight/2;
+      ph.style.setProperty('--px', (px0-cx).toFixed(1)+'px');
+      ph.style.setProperty('--py', (py0-cy-Math.abs(i-mid)*5).toFixed(1)+'px');
+      ph.style.setProperty('--pr', ((i-mid)*4.5).toFixed(2)+'deg');
+      ph.style.setProperty('--or', ((i-mid)*2.6).toFixed(2)+'deg');
+      ph.style.setProperty('--z', String(i+1));   /* 用 CSS 变量记录层级，避免内联 z-index 压过 hover 置顶 */
+    });
+  }
+
+  /* 当前「置顶放大」的牌：悬停优先，其次点击置顶 */
+  function setActive(){
+    const act = (hoverIdx != null ? hoverIdx : pinIdx);
+    stack.querySelectorAll('.photo').forEach(ph=>{
+      ph.classList.toggle('hover', +ph.dataset.i === act);
+    });
+  }
+
+  /* 收回堆叠并清除悬停/置顶，恢复默认牌摞 */
+  function collapse(){
+    stack.classList.remove('open');
+    hoverIdx = pinIdx = null;
+    setActive();
+  }
+
+  function renderLife(key){
+    const d = lifeData[key];
+    if(!d || !stack) return;
+    if(lifeNote) lifeNote.innerHTML = d.note;
+    collapse();
+    stack.innerHTML = d.photos.map((p,i)=>`
+      <div class="photo${(p.img||p.vid)?' has-img':''}" data-i="${i}" style="width:${p.w};${p.ar?('aspect-ratio:'+p.ar+';'):('height:'+p.h+';')}left:${p.l};top:${p.t};${(p.img||p.vid)?'':'background:'+p.g};--d:${i*70}ms">
+        ${p.vid ? '<video src="'+p.vid+'" poster="'+p.vid.replace(/\.mp4$/,'-poster.jpg')+'" muted loop playsinline autoplay preload="auto"></video>' : p.img ? '<img src="'+p.img+'" alt="" draggable="false">' : '<span class="emo">'+p.emo+'</span><span class="ph">照片位 · 待补</span>'}
+      </div>`).join('');
+    layoutPile();
+    /* 只落堆叠态：淡入时保持摞起来，不自动展开（展开只由真实悬停/点击驱动） */
+    let shown = false;
+    const showCards = ()=>{
+      if(shown) return;
+      shown = true;
+      stack.querySelectorAll('.photo').forEach(ph=>ph.classList.add('show'));
+      bindVideoAutoplay();
+    };
+    requestAnimationFrame(()=>requestAnimationFrame(showCards));
+    setTimeout(showCards, 120);
+  }
+  renderLife('dance');
+
+  /* ================= 视频自动播放保障（多层兜底） =================
+     预览面板/部分嵌入环境会拦 autoplay：① 数据到位重试 ② 进视口才播、离视口暂停
+     ③ 用户首次交互（点 tab/滚动/按键）强制播放——任一路通都能播起来 */
+  function bindVideoAutoplay(){
+    const vids = Array.from(stack.querySelectorAll('video'));
+    if(!vids.length) return;
+    const tryPlay = v=>{ const p=v.play(); if(p&&p.catch) p.catch(()=>{}); };
+    vids.forEach(tryPlay);
+    vids.forEach(v=>{
+      v.addEventListener('loadeddata', ()=>tryPlay(v), {once:true});
+      v.addEventListener('canplay', ()=>tryPlay(v), {once:true});
+    });
+    if('IntersectionObserver' in window){
+      const io = new IntersectionObserver(entries=>{
+        entries.forEach(en=>{
+          if(en.isIntersecting) tryPlay(en.target);
+          else if(!en.target.paused) en.target.pause();
+        });
+      }, {threshold:0.12});
+      vids.forEach(v=>io.observe(v));
+    }
+  }
+  let interactPlayed = false;
+  function playAllVideos(){
+    if(interactPlayed) return;
+    interactPlayed = true;
+    stack.querySelectorAll('video').forEach(v=>{ const p=v.play(); if(p&&p.catch) p.catch(()=>{}); });
+  }
+  ['pointerdown','keydown','touchstart'].forEach(ev=>
+    window.addEventListener(ev, playAllVideos, {once:true}));
+
+  document.getElementById('lifeTabs').addEventListener('click', e=>{
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    document.querySelectorAll('#lifeTabs button').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    renderLife(btn.dataset.c);   /* 点 tab：只呈现堆叠态，不自动展开 */
+  });
+
+  /* 指针真实移动到某张牌上：展开 + 该牌置顶放大；移到间隙则取消置顶（保持展开）
+     ⚠️ Chrome 在页面加载/滚动时，会把“停在光标下的元素”当成已悬停并补发 mousemove，
+     必须用 screenX/Y 是否变化区分真实移动与伪悬停，否则一进页面就自动展开 */
+  let lastSX = null, lastSY = null;
+  stack.addEventListener('mousemove', e=>{
+    /* 首个事件只记录坐标（无法判定真假）；之后坐标变了才算真实移动 */
+    const moved = lastSX !== null && lastSY !== null &&
+      (Math.abs(e.screenX-lastSX) > 0.5 || Math.abs(e.screenY-lastSY) > 0.5);
+    lastSX = e.screenX; lastSY = e.screenY;
+    if(!moved) return;                             /* 伪悬停（加载/滚动造成）：忽略 */
+    const ph = e.target.closest('.photo');
+    const idx = ph ? +ph.dataset.i : null;
+    if(idx !== hoverIdx){ hoverIdx = idx; setActive(); }
+    if(idx != null){
+      stack.classList.add('open');
+    }
+  });
+
+  /* 离开照片区：收回堆叠，清除悬停与置顶 */
+  stack.addEventListener('mouseleave', collapse);
+
+  /* 点击某张牌：置顶放大（再点一次取消）；点空白处：取消置顶
+     触屏（无 hover）没有“移开鼠标”概念，取消置顶时同步收起，恢复牌摞 */
+  stack.addEventListener('click', e=>{
+    const ph = e.target.closest('.photo');
+    const noHover = window.matchMedia('(hover: none)').matches;
+    if(ph){
+      const idx = +ph.dataset.i;
+      if(pinIdx === idx){
+        pinIdx = null; setActive();
+        if(noHover) collapse();
+      } else {
+        pinIdx = idx; stack.classList.add('open'); setActive();
+      }
+    } else if(pinIdx != null){
+      pinIdx = null; setActive();
+      if(noHover) collapse();
+    }
+  });
+
+  /* 尺寸变化：重算堆叠位移 */
+  let resizeTimer = null;
+  window.addEventListener('resize', ()=>{
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(layoutPile, 150);
+  });
+
+  /* ================= Hero 背景：巨弧缓慢旋转（仿 anima 首屏，SVG+CSS） ================= */
+  (function(){
+    var host=document.querySelector('.hero-lines');
+    if(!host) return;
+    var NS='http://www.w3.org/2000/svg';
+    var INK='23,23,43';                        /* 与 --ink 同源，弧线走银灰近黑，不发紫不抢色 */
+
+    function rnd(a,b){ return a+Math.random()*(b-a); }
+    function el(n,attr){ var e=document.createElementNS(NS,n); for(var k in attr) e.setAttribute(k,attr[k]); return e; }
+
+    function build(){
+      /* .hero-lines 是空 absolute div，自身尺寸为 0；尺寸从父级 hero 取 */
+      W=host.parentElement.offsetWidth; H=host.parentElement.offsetHeight;
+      if(!W||!H) return false;
+      host.style.width=W+'px'; host.style.height=H+'px';
+      host.innerHTML='';
+      var svg=el('svg',{viewBox:'0 0 '+W+' '+H,width:W,height:H});
+      var defs=el('defs',{});
+      svg.appendChild(defs);
+      var R=Math.max(W,H);
+      /* 巨弧：圆心在屏幕外、半径极大，每次只露出一段，旋转中时而是弧、时而是半圆。
+         半径按“圆心→屏心距离”的比例定，保证屏心始终落在圆周附近、弧段横穿屏幕 */
+      var specs=[
+        /* 左上：大半径缓弧，顺时针慢慢转 */
+        { cx:-0.42*W, cy:-0.55*H, kr:1.18, rr:0.86, spLo:1.15, spHi:1.45, dir: 1, perLo:22, perHi:26, w:2.6, al:0.26 },
+        /* 右侧：圆环的一段，反向，周期更长 */
+        { cx: 1.30*W, cy: 0.42*H, kr:1.12, rr:0.88, spLo:1.10, spHi:1.40, dir:-1, perLo:30, perHi:35, w:2.2, al:0.22 },
+        /* 左下：中等弧，顺时针，节奏快一档 */
+        { cx:-0.38*W, cy: 1.70*H, kr:1.08, rr:0.72, spLo:1.20, spHi:1.50, dir: 1, perLo:18, perHi:22, w:1.9, al:0.20 },
+        /* 右下：小弧点缀，慢速反向 */
+        { cx: 1.25*W, cy: 1.60*H, kr:1.02, rr:0.66, spLo:1.00, spHi:1.30, dir:-1, perLo:26, perHi:31, w:1.6, al:0.16 }
+      ];
+      var gi=0;
+      specs.forEach(function(d){
+        var span=rnd(d.spLo,d.spHi)*Math.PI;
+        var dx=W*0.5-d.cx, dy=H*0.5-d.cy;
+        var dist=Math.sqrt(dx*dx+dy*dy);
+        var rx=dist*d.kr, ry=rx*d.rr;
+        /* 弧段初始就跨在“圆心→屏幕中心”方向上，保证一开始就看得见，旋转后扫过视野 */
+        var base=Math.atan2(dy,dx);
+        var a0=base-span*0.5, a1=a0+span;
+        var x0=d.cx+rx*Math.cos(a0), y0=d.cy+ry*Math.sin(a0);
+        var x1=d.cx+rx*Math.cos(a1), y1=d.cy+ry*Math.sin(a1);
+        var id='arcG'+(gi++);
+        /* 渐变沿弧两端弦方向：大半径缓弧上肉眼即沿弧长渐隐；单路径无接头、无点 */
+        var g=el('linearGradient',{id:id,gradientUnits:'userSpaceOnUse',
+          x1:x0.toFixed(1),y1:y0.toFixed(1),x2:x1.toFixed(1),y2:y1.toFixed(1)});
+        g.appendChild(el('stop',{offset:'0',   'stop-color':'rgb('+INK+')','stop-opacity':'0'}));
+        g.appendChild(el('stop',{offset:'.18', 'stop-color':'rgb('+INK+')','stop-opacity':(d.al*0.45).toFixed(3)}));
+        g.appendChild(el('stop',{offset:'.5',  'stop-color':'rgb('+INK+')','stop-opacity':d.al.toFixed(3)}));
+        g.appendChild(el('stop',{offset:'.82', 'stop-color':'rgb('+INK+')','stop-opacity':(d.al*0.45).toFixed(3)}));
+        g.appendChild(el('stop',{offset:'1',   'stop-color':'rgb('+INK+')','stop-opacity':'0'}));
+        defs.appendChild(g);
+        var large=span>Math.PI?1:0;
+        var path='M'+x0.toFixed(1)+' '+y0.toFixed(1)+' A'+rx.toFixed(1)+' '+ry.toFixed(1)+' 0 '+large+' 1 '+x1.toFixed(1)+' '+y1.toFixed(1);
+        var grp=el('g',{class:'arc'});
+        /* 绕自身圆心匀速旋转：transform-origin 设成圆心（view-box 坐标系） */
+        grp.style.transformOrigin=d.cx.toFixed(1)+'px '+d.cy.toFixed(1)+'px';
+        grp.style.animation='arcSpin'+(d.dir>0?'A':'B')+' '+rnd(d.perLo,d.perHi).toFixed(1)+'s linear infinite';
+        grp.appendChild(el('path',{d:path,fill:'none',stroke:'url(#'+id+')','stroke-width':d.w,'stroke-linecap':'round'}));
+        svg.appendChild(grp);
+      });
+      /* 静态速度线底纹：极淡，跟原站一样只是纹理、不抢戏 */
+      var n = W<760 ? 5 : 8;
+      for(var i=0;i<n;i++){
+        var x=rnd(-0.2,1.05)*W, y=rnd(-0.15,0.6)*H, a=rnd(0.52,0.66), len=R*rnd(0.4,0.9);
+        var x2=x+Math.cos(a)*len, y2=y+Math.sin(a)*len;
+        var id='rayG'+i;
+        var rg=el('linearGradient',{id:id,gradientUnits:'userSpaceOnUse',
+          x1:x.toFixed(1),y1:y.toFixed(1),x2:x2.toFixed(1),y2:y2.toFixed(1)});
+        rg.appendChild(el('stop',{offset:'0','stop-color':'rgb('+INK+')','stop-opacity':'0'}));
+        rg.appendChild(el('stop',{offset:'.5','stop-color':'rgb('+INK+')','stop-opacity':rnd(0.05,0.10).toFixed(3)}));
+        rg.appendChild(el('stop',{offset:'1','stop-color':'rgb('+INK+')','stop-opacity':'0'}));
+        defs.appendChild(rg);
+        svg.appendChild(el('line',{x1:x.toFixed(1),y1:y.toFixed(1),x2:x2.toFixed(1),y2:y2.toFixed(1),
+          stroke:'url(#'+id+')','stroke-width':'1'}));
+      }
+      host.appendChild(svg);
+      return true;
+    }
+
+    var W=0,H=0;
+    if(build()){
+      host.classList.add('on');
+    }
+    /* 滚出首屏/切走标签页：暂停 CSS 动画，不白烧电 */
+    document.addEventListener('visibilitychange', function(){
+      host.classList.toggle('off', document.hidden);
+    });
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){
+        host.classList.toggle('off', !es[0].isIntersecting);
+      },{threshold:0}).observe(host);
+    }
+    var rt=null;
+    window.addEventListener('resize', function(){
+      clearTimeout(rt);
+      rt=setTimeout(build, 200);
+    });
+  })();
+
+  /* ================= 联系方式：点击整行即复制 ================= */
+  (function(){
+    var hint = document.querySelector('.cta-lines .ct-hint');
+    var timer = null;
+    function flash(txt){
+      if(!hint) return;
+      hint.textContent = txt; hint.classList.add('done');
+      clearTimeout(timer);
+      timer = setTimeout(function(){ hint.textContent = '点击即可复制'; hint.classList.remove('done'); }, 1600);
+    }
+    function legacy(t){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        var r = document.execCommand('copy');
+        document.body.removeChild(ta); return r;
+      }catch(e){ return false; }
+    }
+    document.querySelectorAll('.cta-lines [data-copy]').forEach(function(el){
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', function(){
+        var text = el.getAttribute('data-copy') || '';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function(){ flash('已复制 \u2713'); })
+            .catch(function(){ legacy(text) ? flash('已复制 \u2713') : flash('复制失败'); });
+        } else { legacy(text) ? flash('已复制 \u2713') : flash('复制失败'); }
+      });
+    });
+  })();
+
+  /* ================= 岗位意向切换（ featured 态跟随） ================= */
+  const trackPm = document.getElementById('trackPm');
+  const trackPmo = document.getElementById('trackPmo');
+  function setTrack(isPm){
+    document.querySelectorAll('#trackToggle button').forEach(b=>b.classList.toggle('on', b.dataset.t === (isPm ? 'pm' : 'pmo')));
+    trackPm.classList.toggle('featured', isPm);
+    trackPmo.classList.toggle('featured', !isPm);
+    if(!trackPmo.querySelector('.badge')){
+      const b = document.createElement('span');
+      b.className = 'badge'; b.textContent = '主投方向';
+      trackPmo.prepend(b);
+    }
+    trackPm.querySelector('.badge').style.display = isPm ? '' : 'none';
+    trackPmo.querySelector('.badge').style.display = isPm ? 'none' : '';
+  }
+  /* 点击导览按钮切换 */
+  document.getElementById('trackToggle').addEventListener('click', e=>{
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    setTrack(btn.dataset.t === 'pm');
+  });
+  /* 点击大卡片本身也可切换：点哪张，哪张成为主投方向 */
+  [trackPm, trackPmo].forEach(card=>{
+    card.addEventListener('click', ()=> setTrack(card === trackPm));
+  });
+
+  /* ================= 滚动浮现 ================= */
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  /* ================= 顶栏 / 回顶 / scrollspy ================= */
+  const topbar = document.getElementById('topbar');
+  const totop = document.getElementById('totop');
+  const secs = [...document.querySelectorAll('section[id]')];
+  const navLinks = [...document.querySelectorAll('.nav a')];
+
+  function onScroll(){
+    const y = window.scrollY;
+    topbar.classList.toggle('scrolled', y > 10);
+    totop.classList.toggle('show', y > 600);
+    let cur = secs[0].id;
+    for(const s of secs){ if(s.offsetTop - 150 <= y) cur = s.id; }
+    navLinks.forEach(a=>a.classList.toggle('active', a.getAttribute('href') === '#'+cur));
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+</script>
+
+
+</body></html>
